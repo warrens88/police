@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTf-8">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ID+PW교육대상자회원가입</title>
+
+<!-- CSS(S) -->
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/font.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../css/mobile.css">
+<!--CSS(E) -->
+
+<!-- SCRIPT(S) -->
+
+
+
+<script type="text/javascript" src="../js/script.js"></script>
+
+<!-- SCRIPT(E) -->
+
+</head>
+
+<body> 
+	<!-- warp(S) -->
+	<div class="wrap">
+		<div class="w_in">
+			
+<!-- header(S) -->
+			<div class="header">
+
+				<a href="#!" class="h-logo">
+					<img src="../img/header/header_logo.png" alt="logo" />
+				</a>
+
+				<ul class="nav" >
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">교육관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">교육 조회 및 수강신청</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">컨텐츠관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+							<li><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">게시판</a></div>
+						<ul class="subnav">
+							<li><a href="#!">공지사항</a></li>
+							<li><a href="#!">농업교육 익명 게시판</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">통계현황</a></div>
+						<ul class="subnav">
+							<li><a href="#!">사용자 등록 현황</a></li>
+							<li><a href="#!">교육자 실시간 현황</a></li>
+							<li><a href="#!">컨텐츠 제공자 현황</a></li>
+							<li><a href="#!">대시보드</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">시스템관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">기관 관리</a></li>
+							<li><a href="#!">사용자 관리</a></li>
+							<li><a href="#!">프로그램 관리</a></li>
+							<li><a href="#!">메뉴 관리</a></li>
+							<li><a href="#!">공통메뉴 관리</a></li>
+							<li><a href="#!">기관메뉴 관리</a></li>
+							<li><a href="#!">개인메뉴 관리</a></li>
+							<li><a href="#!">공통코드 관리</a></li>
+							<li><a href="#!">게시판구성 관리</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+
+<!-- 로그인 후(S) -->				
+				<p class="welcome-user"><span class="user-name">시스템관리자</span>님 환영합니다!</p>
+
+				<div class="iconbox">
+					<a href="#!" class="icon bell"><img src="../img/header/bell.png" alt="알림"/><span class="letters">2</span></a>
+					<a href="#!" class="icon set"><img src="../img/header/set.png" alt="설정"/></a>
+					<a href="#!" class="icon logout"><img src="../img/header/logout.png" alt="로그아웃"/></a>
+				</div>
+
+				<a href="#!" class="btn_mobile-menu btn_lnb"><img src="../img/menu_icon.png" alt="모바일메뉴버튼"></a>
+<!-- 로그인 후(E) -->								
+
+<!-- 로그인 전(S) -->
+				<div class="log-before" style="display:none;">
+					<a href="#!" class="h-log">로그인</a>
+					<a href="#!" class="h-sign">회원가입</a>
+				</div>
+<!-- 로그인 전(E) -->
+
+<!-- btn-mobile-menu(S) -->
+				<a href="#!" id="btnMobileMenu" class="btn-mobile-menu"><span>MENU</span></a>
+<!-- btn-mobile-menu(E) -->
+
+<!-- btn-mobile-search(S) -->
+				<!-- <a href="#!" class="btn-mobile-search" id="btnOpenRight"><span>+</span></a> -->
+<!-- btn-mobile-search(E) -->
+
+			</div>	
+			<!-- header(E) -->
+			
+
+			<!-- sub-contents(S) -->
+			<div class="sub-contents">
+				<div class="sub-in">
+
+					<!-- sub-left(S) -->
+					<div class="sub-left" id="leftSide">
+
+
+<!---------------------- 회원가입(S) ---------------------->
+						<div class="log-page">
+
+							<div class="title-box">
+								<div class="fl">
+									<h2 class="title-04">회원가입</h2>
+								</div>
+							</div>
+
+							<div class="btn-box sign">
+								<div class="fl">
+									<a href="#!" class="btn-sign edu">교육 대상자로 가입</a>
+									<a href="#!" class="btn-sign conts">컨텐츠 제공자로 가입</a>
+								</div>
+							</div>
+
+						</div>						
+<!---------------------- 회원가입(E) ---------------------->	
+
+<!---------------------- 회원가입(S) ---------------------->
+						<div class="log-page">
+
+							<div class="title-box">
+								<div class="fl">
+									<h2 class="title-04">교육대상자 회원가입</h2>
+								</div>
+							</div>
+
+							<div class="btn-box sign-edu">
+								<a href="#!" class="btn-edu normal"><span>일반 회원가입</span></a>
+								<a href="#!" class="btn-edu google"><span>구글 회원가입</span></a>
+								<a href="#!" class="btn-edu kakao"><span>카카오 회원가입</span></a>
+								<a href="#!" class="btn-edu naver"><span>네이버 회원가입</span></a>
+								<a href="#!" class="btn-edu agri"><span>농업교육포털 회원가입</span></a>
+							</div>
+
+						</div>						
+<!---------------------- 회원가입(E) ---------------------->
+
+<!---------------------- 정보입력(S) ---------------------->
+						<div class="log-page">
+
+							<div class="title-box">
+								<div class="fl">
+									<h2 class="title-04">정보입력</h2>
+								</div>
+							</div>
+
+							<div class="title-box mt40">
+								<div class="fl">
+									<h2 class="title-01">필수정보</h2>
+								</div>
+							</div>
+
+							<ul class="table-ul-02 devide-2 bg-dark mt25 ">
+								<li>
+									<h4 class="title-02 point">아이디</h4>
+									<div class="tit-info">
+										<div class="div-ip btn-right">
+											<input type="text" id="tu02Ip" placeholder="이메일 주소를 입력하세요"><label for="tu02Ip"></label>
+											<a href="#!" class="btn-type-03 ip-btn-dark">비밀번호 초기화</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">이름</h4>
+									<div class="tit-info">
+										<div class="div-ip">
+											<input type="text" id="tu02Ip"><label for="tu02Ip"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">비밀번호</h4>
+									<div class="tit-info">
+										<div class="div-ip">
+											<input type="password" id="tu02Ip" placeholder="영문, 숫자, 특수문자를 2가지 이상 조합하여 8-16자"><label for="tu02Ip"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">비밀번호 확인</h4>
+									<div class="tit-info">
+										<div class="div-ip">
+											<input type="password" id="tu02Ip"><label for="tu02Ip"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">휴대전화</h4>
+									<div class="tit-info">
+										<div class="div-ip btn-right">
+											<input type="number" id="tu02Ip" placeholder="(-)없이 숫자만 입력"><label for="tu02Ip"></label>
+											<a href="#!" class="btn-type-03 ip-btn-dark">인증번호 전송</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02">전화번호</h4>
+									<div class="tit-info">
+										<div class="div-ip">
+											<input type="number" id="tu02Ip" placeholder="(-)없이 숫자만 입력"><label for="tu02Ip"></label>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<div class="title-box mt120">
+								<div class="fl">
+									<h2 class="title-01">출금계좌 등록</h2>
+								</div>
+							</div>
+
+							<ul class="table-ul-02 devide-2 bg-dark mt25 ">
+								<li>
+									<h4 class="title-02 point">예금주</h4>
+									<div class="tit-info">
+										<div class="div-ip btn-right">
+											<input type="text" id="tu02Ip" ><label for="tu02Ip"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">은행 선택</h4>
+									<div class="tit-info">
+										<div class="div-sel">
+											<select id="tu02Sel">
+												<option>전체선택</option>
+											</select>
+											<label for="tu02Ip"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">계좌번호</h4>
+									<div class="tit-info">
+										<div class="div-ip">
+											<input type="number" id="tu02Ip" placeholder="(-)없이 숫자만 입력"><label for="tu02Ip"></label>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<div class="title-box mt120">
+								<div class="fl">
+									<h2 class="title-01">약관동의</h2>
+								</div>
+							</div>
+
+							<ul class="toggle-01 mt25">
+								<li class="tog-01-header">
+									<h4 class="title-tog-01" id="clickOpen">서비스 이용약관<span>(필수)</span></h4>
+									<div class="tog-chk-01">
+										<input type="checkbox" id="agree01" class="agree01"><label for="agree01" class="chk-agree"><span></span>동의</label>
+									</div>
+								</li>
+								<li class="tog-01-body">
+									<p>
+										개인정보수집 및 이용안내<br/>
+										***(이하 "회사" 또는 "***"이라 함)는 통신비밀보호법, 전기통신사업법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 정보통신서비스제공자가 준수하여야 할 관련 법령상의<br/> 
+										개인정보보호 규정을 준수하며, 관련 법령에 의거한 개인정보취급방침을 정하여 이용자 권익 보호에 최선을 다하고 있습니다.<br/>
+										"***"의 개인정보취급방침은 다음과 같은 내용을 담고 있습니다.<br/>
+										1. 수집하는 개인정보의 항목 및 수집방법<br/>
+									</p>
+								</li>
+							</ul>
+							
+
+							<ul class="toggle-01 mt10">
+								<li class="tog-01-header">
+									<h4 class="title-tog-01">서비스 이용약관<span>(필수)</span></h4>
+									<div class="tog-chk-01">
+										<input type="checkbox" id="agree02" class="agree01"><label for="agree02" class="chk-agree"><span></span>동의</label>
+									</div>
+								</li>
+								<li class="tog-01-body" id="toggleBody2">
+									<p>
+										개인정보수집 및 이용안내<br/>
+										***(이하 "회사" 또는 "***"이라 함)는 통신비밀보호법, 전기통신사업법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 정보통신서비스제공자가 준수하여야 할 관련 법령상의<br/> 
+										개인정보보호 규정을 준수하며, 관련 법령에 의거한 개인정보취급방침을 정하여 이용자 권익 보호에 최선을 다하고 있습니다.<br/>
+										"***"의 개인정보취급방침은 다음과 같은 내용을 담고 있습니다.<br/>
+										1. 수집하는 개인정보의 항목 및 수집방법<br/>
+									</p>
+								</li>
+							</ul>
+							<div class="btn-box tr mt35">
+								<input type="checkbox" id="agree03" class="agree01"><label for="agree03" class="chk-agree"><span></span>모든 약관에 동의합니다.</label>
+							</div>
+
+							<div class="btn-box tr">
+								<a href="#!" class="btn-type-04 normal">취소</a>
+								<a href="#!" class="btn-type-04 gradient">회원가입</a>
+							</div>
+
+
+
+
+
+						</div>
+<!---------------------- 정보입력(E) ---------------------->
+
+
+					</div>
+					<!-- sub-left(E) -->
+
+					<!-- sub-right(S) -->
+					<div class="sub-right" id="rightSide">
+
+					</div>
+					<!-- sub-right(E) -->
+
+				</div>
+			</div>
+			<!-- sub-contents(E) -->
+
+			
+						<!-- footer(S) -->
+			<div class="footer">
+				<div class="f_in">
+					
+					<a href="#!" class="f-logo">
+						<img src="../img/footer/footer_logo.png" alt="footerlogo" />
+					</a>
+
+					<div class="f-nav">
+						<a href="#!">개인정보처리방침</a>
+						<a href="#!">이용약관</a>
+					</div>
+
+					<p class="f-address">서울시 서초구 강남대로 27 aT센터 1302호</p>
+					<p class="f-copyright">Copyright © <span>에이콘컴퍼니</span> All rights.</p>
+				</div>
+			</div>
+			<!-- footer(E) -->
+
+		</div>
+	</div>
+	<!-- wrap(E) -->
+
+	<!-- mobile-menu(S) -->
+<div id="lnb" class="mobile-menu">
+    <!-- <div class="dim"></div> -->
+
+    <div class="mm_top">
+		<!-- before-log(S) -->
+        <!-- <div class="m_log after-log">
+            <a href="#!">로그인</a>
+            <a href="#!">회원가입</a>
+        </div> -->
+		<!-- before-log(E) -->
+
+		<!-- after-log(S) -->
+		<div class="m_log after-log">
+            <a href="#!"><span class="al-name">교육대상자</span>님 환영합니다!</a>
+        </div>
+		<!-- after-log(E) -->
+		
+        <a href="#!" id="btnCloseMobileMenu" class="m-btn-close"><img src="../img/m_lnb_close.png" alt="모바일lnb닫기버튼"></a>
+    </div>
+    
+    <ul class="lnb_box">
+      <li><a href="#!">교육관리</a>
+        <ul style="display: none;">
+          <li class="noDepth"><a href="#!">교육 조회 및 수강신청</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="#!">컨텐츠관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">게시판</a>
+        <ul>
+          <li class="noDepth"><a href="#!">공지사항</a></li>
+          <li class="noDepth"><a href="#!">농업교육 익명 게시판</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">통계현황</a>
+      <ul>
+          <li class="noDepth"><a href="#!">사용자 등록 현황</a></li>
+          <li class="noDepth"><a href="#!">교육자 실시간 현황</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 제공자 현황</a></li>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+		</ul>
+      </li>
+      <li><a href="#!">시스템관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">기간 관리</a></li>
+          <li class="noDepth"><a href="#!">사용자 관리</a></li>
+          <li class="noDepth"><a href="#!">프로그램 관리</a></li>
+          <li class="noDepth"><a href="#!">메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">기관메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">개인메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통코드 관리</a></li>
+          <li class="noDepth"><a href="#!">게시판구성 관리</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">마이페이지</a>
+        <ul>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+          <li><a href="#!">교육관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">교육이력</a></li>
+				<li class="noDepth"><a href="#!">수강후기</a></li>
+				<li class="noDepth"><a href="#!">좋아요 한 교육</a></li>
+			</ul>
+		  </li>
+          <li><a href="#!">결제관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">강의바구니</a></li>
+				<li class="noDepth"><a href="#!">구매이력</a></li>
+				<li class="noDepth"><a href="#!">나의 포인트</a></li>
+			</ul>
+		  </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<!-- mobile-menu(E) -->		
+
+
+</body>
+</html>
+
+

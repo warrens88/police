@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTf-8">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>01_마이페이지-01_교육대상자-03_결제관리-03_나의포인트</title>
+
+<!-- CSS(S) -->
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/font.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../css/mobile.css">
+<!--CSS(E) -->
+
+<!-- SCRIPT(S) -->
+
+<script type="text/javascript" src="../js/script.js"></script>
+
+
+<!-- SCRIPT(E) -->
+
+</head>
+
+<body> 
+	<!-- warp(S) -->
+	<div class="wrap">
+		<div class="w_in">
+			
+<!-- header(S) -->
+			<div class="header">
+
+				<a href="#!" class="h-logo">
+					<img src="../img/header/header_logo.png" alt="logo" />
+				</a>
+
+				<ul class="nav" >
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">교육관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">교육 조회 및 수강신청</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">컨텐츠관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+							<li><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">게시판</a></div>
+						<ul class="subnav">
+							<li><a href="#!">공지사항</a></li>
+							<li><a href="#!">농업교육 익명 게시판</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">통계현황</a></div>
+						<ul class="subnav">
+							<li><a href="#!">사용자 등록 현황</a></li>
+							<li><a href="#!">교육자 실시간 현황</a></li>
+							<li><a href="#!">컨텐츠 제공자 현황</a></li>
+							<li><a href="#!">대시보드</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">시스템관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">기관 관리</a></li>
+							<li><a href="#!">사용자 관리</a></li>
+							<li><a href="#!">프로그램 관리</a></li>
+							<li><a href="#!">메뉴 관리</a></li>
+							<li><a href="#!">공통메뉴 관리</a></li>
+							<li><a href="#!">기관메뉴 관리</a></li>
+							<li><a href="#!">개인메뉴 관리</a></li>
+							<li><a href="#!">공통코드 관리</a></li>
+							<li><a href="#!">게시판구성 관리</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+
+<!-- 로그인 후(S) -->				
+				<p class="welcome-user"><span class="user-name">시스템관리자</span>님 환영합니다!</p>
+
+				<div class="iconbox">
+					<a href="#!" class="icon bell"><img src="../img/header/bell.png" alt="알림"/><span class="letters">2</span></a>
+					<a href="#!" class="icon set"><img src="../img/header/set.png" alt="설정"/></a>
+					<a href="#!" class="icon logout"><img src="../img/header/logout.png" alt="로그아웃"/></a>
+				</div>
+
+				<a href="#!" class="btn_mobile-menu btn_lnb"><img src="../img/menu_icon.png" alt="모바일메뉴버튼"></a>
+<!-- 로그인 후(E) -->								
+
+<!-- 로그인 전(S) -->
+				<div class="log-before" style="display:none;">
+					<a href="#!" class="h-log">로그인</a>
+					<a href="#!" class="h-sign">회원가입</a>
+				</div>
+<!-- 로그인 전(E) -->
+
+<!-- btn-mobile-menu(S) -->
+				<a href="#!" id="btnMobileMenu" class="btn-mobile-menu"><span>MENU</span></a>
+<!-- btn-mobile-menu(E) -->
+
+<!-- btn-mobile-search(S) -->
+				<a href="#!" class="btn-mobile-search" id="btnOpenRight"><span>+</span></a>
+<!-- btn-mobile-search(E) -->
+
+			</div>	
+			<!-- header(E) -->
+			
+
+			<!-- sub-contents(S) -->
+			<div class="sub-contents">
+				<div class="sub-in">
+
+					<!-- left-menu(S) -->
+					<div class="left-menu" id="leftMenu">
+						<ul class="lb-products-01 blue">
+							<li class="lb-item-depth-01"><a href="#!">대시보드</a></li>
+						</ul>
+						<ul class="lb-products-01 green">
+							<li class="lb-item-depth-01"><a href="#!">교육관리</a>
+								<ul class="lb-products-02">
+									<li class="lb-item-depth-02"><a href="#!">교육이력</a></li>
+									<li class="lb-item-depth-02"><a href="#!">수강후기</a></li>
+									<li class="lb-item-depth-02"><a href="#!">좋아요 한 교육</a></li>
+								</ul>
+							</li>	
+						</ul>
+						<ul class="lb-products-01 yellow on">
+							<li class="lb-item-depth-01"><a href="#!">결제관리</a>
+								<ul class="lb-products-02">
+									<li class="lb-item-depth-02"><a href="#!">강의바구니</a></li>
+									<li class="lb-item-depth-02"><a href="#!">구매이력</a></li>
+									<li class="lb-item-depth-02 on"><a href="#!">나의 포인트</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- left-menu(E) -->
+
+
+					<!-- sub-left(S) -->
+					<div class="sub-left menu" id="leftSide">
+						
+						<!-- title-area(S) -->
+						<div class="title-area">
+							<img class="page-bg" src="../img/title-area.png" alt="타이틀구역">
+							<div class="total-price">
+								<h2 class="total-title-01">구매한 총 금액 : 101,500 원</h2>
+							</div>
+						</div>
+						<!-- title-area(E) -->
+
+						<div class="contents-area">
+							
+							<div class="title-box sort mt0">
+								<div class="fl">
+									<h2 class="title-01">포인트 적립내역</h2>
+								</div>
+								<div class="fr">
+									<a href="#!" class="btn-sort on">최근 수강 순</a>
+									<a href="#!" class="btn-sort">제목순</a>
+									<a href="#!" class="btn-sort">진행률 순</a>
+								</div>
+							</div>
+
+							<!-- 구매이력(S) -->
+							<ul class="present-condition my-point mt25">
+								<li class="condition">
+									<span class="pc-num">01</span>
+									<div class="pc-info">
+										<h4 class="pc-tit">2021 농업교육 중급-VR</h4>
+										<ul class="pc-detail">
+											<li class="pc-order-num">주문번호 291462314</li>
+											<li class="pc-day">2021.08.01</li>
+											<li class="pc-cost">KRW 100,000</li>
+										</ul>
+									</div>
+									<span class="pc-point">7p</span>
+								</li>
+								<li class="condition">
+									<span class="pc-num">01</span>
+									<div class="pc-info">
+										<h4 class="pc-tit">2021 농업교육 중급-VR</h4>
+										<ul class="pc-detail">
+											<li class="pc-order-num">주문번호 291462314</li>
+											<li class="pc-day">2021.08.01</li>
+											<li class="pc-cost">KRW 100,000</li>
+										</ul>
+									</div>
+									<span class="pc-point">7p</span>
+								</li>
+							</ul>
+							<!-- 구매이력(E) -->
+
+							
+							<div class="btn-box">
+								<div class="fl">
+									<a href="#!" class="btn-type-03 yellow">포인트 모으는 방법</a>
+								</div>
+								<div class="fr">
+									<!-- 페이지박스(S) -->
+									<div class="paging_box mt0">
+										<a href="#!" class="btn_page_prev">이전</a>
+										<a href="#!" class="btn_page on">1</a>
+										<a href="#!" class="btn_page">2</a>
+										<a href="#!" class="btn_page">3</a>
+										<a href="#!" class="btn_page">4</a>
+										<a href="#!" class="btn_page">5</a>
+										<a href="#!" class="btn_page_next">다음</a>
+									</div>
+									<!-- 페이지박스(E) -->	
+								</div>
+							</div>
+
+
+							
+							<div class="title-box mt80">
+								<div class="fl">
+									<h2 class="title-01">포인트 랭킹</h2>
+								</div>
+							</div>
+
+							<!-- 포인트 적립내역(S) -->
+							<ul class="table-ul rank mt25">
+								<li class="rank-check">
+									<p class="txt-rank num">32위</h4>
+									<p class="txt-rank name">itsmyid</p>
+									<p class="txt-rank day">21.09.21가입</p>
+									<p class="txt-rank r-point">20p</p>
+								</li>
+								<li>
+									<p class="txt-rank num">2위</h4>
+									<p class="txt-rank name">itSSSSsmyid</p>
+									<p class="txt-rank day">21.09.21가입</p>
+									<p class="txt-rank r-point">7,120 p</p>
+								</li>
+							</ul>
+							<!-- 포인트 적립내역(E) -->
+						</div>
+
+						
+
+					</div>
+					<!-- sub-left(E) -->
+
+					<!-- sub-right(S) -->
+					<div class="sub-right" id="rightSide">
+
+						<!-- search(S) -->
+						<div class="search">
+							<ul>
+								<li>
+									<select id="serchSel">
+										<option>select</option>
+									</select>	
+									<label for="searchSel"></label>
+								</li>
+								<li>
+									<div class="date-box">
+										<input type="text" class="datepicker">
+									</div>
+								</li>
+								<li>
+									<input type="text">
+								</li>
+							</ul>
+							<button class="btn-search">조회</button>
+						</div>
+						<!-- search(E) -->
+
+					</div>
+					<!-- sub-right(E) -->
+
+				</div>
+			</div>
+			<!-- sub-contents(E) -->
+
+			
+						<!-- footer(S) -->
+			<div class="footer">
+				<div class="f_in">
+					
+					<a href="#!" class="f-logo">
+						<img src="../img/footer/footer_logo.png" alt="footerlogo" />
+					</a>
+
+					<div class="f-nav">
+						<a href="#!">개인정보처리방침</a>
+						<a href="#!">이용약관</a>
+					</div>
+
+					<p class="f-address">서울시 서초구 강남대로 27 aT센터 1302호</p>
+					<p class="f-copyright">Copyright © <span>에이콘컴퍼니</span> All rights.</p>
+				</div>
+			</div>
+			<!-- footer(E) -->
+
+			<!-- popup(S) -->
+			<div class="popup my-point" style="display:none;">
+				<div class="popup-in">
+					<div class="title-box">
+						<h4 class="popup-title-01">포인트 적립 방법 안내
+						</h4>
+					</div>
+					<div class="comment-box tl">
+						<p class="p-comment mt30">유료 교육를 구매할 때<span class="pc-point">+ 0.1% PT</span></p>
+						<p class="p-comment mt30">교육에 대한 수강평을 남길 때<span class="pc-point">+ 300 PT</span></p>
+						<p class="p-comment mt30">나의 수강평에 좋아요가 눌릴 때<span class="pc-point">+ 10 PT</span></p>
+					</div>
+					<div class="btn-box">
+						<a href="#!" class="btn-popup confirm">확인</a>
+					</div>
+					<a href="#!" class="btn-popup-close"></a>
+				</div>
+			</div>
+			<!-- popup(E) -->
+
+
+		</div>
+	</div>
+	<!-- wrap(E) -->
+
+	<!-- mobile-menu(S) -->
+<div id="lnb" class="mobile-menu">
+    <!-- <div class="dim"></div> -->
+
+    <div class="mm_top">
+		<!-- before-log(S) -->
+        <!-- <div class="m_log after-log">
+            <a href="#!">로그인</a>
+            <a href="#!">회원가입</a>
+        </div> -->
+		<!-- before-log(E) -->
+
+		<!-- after-log(S) -->
+		<div class="m_log after-log">
+            <a href="#!"><span class="al-name">교육대상자</span>님 환영합니다!</a>
+        </div>
+		<!-- after-log(E) -->
+		
+        <a href="#!" id="btnCloseMobileMenu" class="m-btn-close"><img src="../img/m_lnb_close.png" alt="모바일lnb닫기버튼"></a>
+    </div>
+    
+    <ul class="lnb_box">
+      <li><a href="#!">교육관리</a>
+        <ul style="display: none;">
+          <li class="noDepth"><a href="#!">교육 조회 및 수강신청</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="#!">컨텐츠관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">게시판</a>
+        <ul>
+          <li class="noDepth"><a href="#!">공지사항</a></li>
+          <li class="noDepth"><a href="#!">농업교육 익명 게시판</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">통계현황</a>
+      <ul>
+          <li class="noDepth"><a href="#!">사용자 등록 현황</a></li>
+          <li class="noDepth"><a href="#!">교육자 실시간 현황</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 제공자 현황</a></li>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+		</ul>
+      </li>
+      <li><a href="#!">시스템관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">기간 관리</a></li>
+          <li class="noDepth"><a href="#!">사용자 관리</a></li>
+          <li class="noDepth"><a href="#!">프로그램 관리</a></li>
+          <li class="noDepth"><a href="#!">메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">기관메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">개인메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통코드 관리</a></li>
+          <li class="noDepth"><a href="#!">게시판구성 관리</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">마이페이지</a>
+        <ul>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+          <li><a href="#!">교육관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">교육이력</a></li>
+				<li class="noDepth"><a href="#!">수강후기</a></li>
+				<li class="noDepth"><a href="#!">좋아요 한 교육</a></li>
+			</ul>
+		  </li>
+          <li><a href="#!">결제관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">강의바구니</a></li>
+				<li class="noDepth"><a href="#!">구매이력</a></li>
+				<li class="noDepth"><a href="#!">나의 포인트</a></li>
+			</ul>
+		  </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<!-- mobile-menu(E) -->		
+
+
+</body>
+</html>
+
+

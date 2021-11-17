@@ -1,0 +1,64 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    
+    .card .n_tit{line-height:24px;}
+    
+    .card .n_tit{
+        height:70px;
+        overflow: hidden;
+        position: relative; 
+        /* line-height: 1.2em;
+        max-height: 3.4em; 
+        text-align: justify;
+        margin-right: -1em;
+        padding-right: 1em; */
+      }
+      /* .card .n_tit:before {
+        content: '...';
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        padding-left:30px;
+      }
+      .card .n_tit:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 1em;
+        height: 1em;
+        margin-top: 0.2em;
+      } */
+
+
+
+    .n_detail p{
+        height:70px;
+        /* overflow: hidden;
+        position: relative; 
+        line-height: 1.2em;
+        max-height: 3.4em;
+        text-align: justify;
+        margin-right: -1em;
+        padding-right: 1em; */
+      }
+      /* .n_detail p:before {
+        content: '...';
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+        padding-left:30px;
+      }
+      .n_detail p:after {
+        content: '...';
+        /* position: absolute;
+        right: 0;
+        width: 1em;
+        height: 1em;
+        margin-top: 0.2em; 
+      } */
+      .swiper2 .swiper-button-prev, .swiper2 .swiper-container-rtl .swiper-button-next{left:-10px;}
+
+      
+}
+
+
+

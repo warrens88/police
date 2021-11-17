@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTf-8">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>02_교육관리-02_상세</title>
+
+<!-- CSS(S) -->
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/font.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../css/mobile.css">
+<!--CSS(E) -->
+
+<!-- SCRIPT(S) -->
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+
+<!-- SCRIPT(E) -->
+
+</head>
+
+<body> 
+	<!-- warp(S) -->
+	<div class="wrap">
+		<div class="w_in">
+			
+<!-- header(S) -->
+			<div class="header">
+
+				<a href="#!" class="h-logo">
+					<img src="../img/header/header_logo.png" alt="logo" />
+				</a>
+
+				<ul class="nav" >
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">교육관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">교육 조회 및 수강신청</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">컨텐츠관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+							<li><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">게시판</a></div>
+						<ul class="subnav">
+							<li><a href="#!">공지사항</a></li>
+							<li><a href="#!">농업교육 익명 게시판</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">통계현황</a></div>
+						<ul class="subnav">
+							<li><a href="#!">사용자 등록 현황</a></li>
+							<li><a href="#!">교육자 실시간 현황</a></li>
+							<li><a href="#!">컨텐츠 제공자 현황</a></li>
+							<li><a href="#!">대시보드</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">시스템관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">기관 관리</a></li>
+							<li><a href="#!">사용자 관리</a></li>
+							<li><a href="#!">프로그램 관리</a></li>
+							<li><a href="#!">메뉴 관리</a></li>
+							<li><a href="#!">공통메뉴 관리</a></li>
+							<li><a href="#!">기관메뉴 관리</a></li>
+							<li><a href="#!">개인메뉴 관리</a></li>
+							<li><a href="#!">공통코드 관리</a></li>
+							<li><a href="#!">게시판구성 관리</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+
+<!-- 로그인 후(S) -->				
+				<p class="welcome-user"><span class="user-name">시스템관리자</span>님 환영합니다!</p>
+
+				<div class="iconbox">
+					<a href="#!" class="icon bell"><img src="../img/header/bell.png" alt="알림"/><span class="letters">2</span></a>
+					<a href="#!" class="icon set"><img src="../img/header/set.png" alt="설정"/></a>
+					<a href="#!" class="icon logout"><img src="../img/header/logout.png" alt="로그아웃"/></a>
+				</div>
+
+				<a href="#!" class="btn_mobile-menu btn_lnb"><img src="../img/menu_icon.png" alt="모바일메뉴버튼"></a>
+<!-- 로그인 후(E) -->								
+
+<!-- 로그인 전(S) -->
+				<div class="log-before" style="display:none;">
+					<a href="#!" class="h-log">로그인</a>
+					<a href="#!" class="h-sign">회원가입</a>
+				</div>
+<!-- 로그인 전(E) -->
+
+<!-- btn-mobile-menu(S) -->
+				<a href="#!" id="btnMobileMenu" class="btn-mobile-menu"><span>MENU</span></a>
+<!-- btn-mobile-menu(E) -->
+
+<!-- btn-mobile-search(S) -->
+				<a href="#!" class="btn-mobile-search" id="btnOpenRight"><span>+</span></a>
+<!-- btn-mobile-search(E) -->
+
+			</div>	
+			<!-- header(E) -->
+			
+
+			<!-- sub-contents(S) -->
+			<div class="sub-contents">
+				<div class="sub-in">
+
+					<!-- sub-top(S) -->
+					<div class="sub-top edu-main-bg">
+						<div class="edu-main">
+							<div class="em fl">
+								<span class="edu-main-img">
+									<img src="../img/edu-main-img.png" alt="교육메인이미지">
+								</span>
+							</div>
+							<div class="em fr">
+								<div class="em-fr-in">
+									<div class="em-smart">
+										<a href="#!" class="em-ico share"></a>
+										<a href="#!" class="em-ico like"><span class="num">1,060</span></a>
+									</div>
+									<span class="em-ico online">온라인</span>
+									<h2 class="em-title-01">20221 농업교육 초급</h2>
+									<div class="about-edu ae01">
+										<div class="fl">
+											<h4 class="ae-title-01">홍길동강사</h4>
+										</div>
+										<div class="fr">
+											<span class="ae-star on"></span>
+											<span class="ae-star on"></span>
+											<span class="ae-star on"></span>
+											<span class="ae-star on"></span>
+											<span class="ae-star"></span>
+											<span class="ae-score">4.0</span>
+										</div>
+									</div>
+									<ul class="about-edu ae02">
+										<li class="ae-items">
+											<span class="aei-title-01">교육대상</span>
+											<span class="aei-name">전문농업인</span>
+										</li>
+										<li class="ae-items">
+											<span class="aei-title-01">난이도</span>
+											<span class="aei-name">고급이상</span>
+										</li>
+										<li class="ae-items">
+											<span class="aei-title-01">교육 분류</span>
+											<span class="aei-name">농업 > 쌀</span>
+										</li>
+										<li class="ae-items">
+											<span class="aei-title-01">수강기간</span>
+											<span class="aei-name">무제한</span>
+										</li>
+									</ul>
+									<div class="about-edu ae03">
+										<h4 class="ae-total-time fl">총 8강(2h 12m)</h4>
+										<h4 class="ae-price fr">총 8강(2h 12m)</h4>
+									</div>
+									<div class="btn-box">
+										<a href="#!" class="btn-payment">결제하기</a>
+										<a href="#!" class="btn-basket"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- sub-top(E) -->
+
+					<!-- sub-left(S) -->
+					<div class="sub-left" id="leftSide">
+
+						<div class="contents-area-02 em">
+							
+							<ul class="ca-tab">
+								<!-- <li class="btn-tab on"><span>대시보드</span></li> -->
+								<li class="btn-tab"><span>교육 소개</span></li>
+								<li class="btn-tab"><span>교육 목차</span></li>
+								<li class="btn-tab"><span>수강후기</span></li>
+							</ul>
+
+							<ul class="ca-tab-products">
+
+								<!-- 대시보드(S) -->
+								<li class="ca-tab-item cti01">
+									
+									<h4 class="title-01 green">대시보드</h4>
+									<ul class="table-ul devide-2 mt25">
+										<li>
+											<div class="title-box">
+												<div class="fl">
+													<h2 class="title-sub-02">내 학습상환</h2>
+												</div>
+											</div>
+											<div class="tit-info-02">
+												<div class="cti-box cb01">
+													<div class="fl">
+														<h2 class="txt-chapter part"><span class="chapter-now">2</span>/28</h2>
+														<p class="txt-chapter-info">수강 완료 수</p>
+													</div>
+													<div class="fr">
+														<h2 class="txt-chapter time">1h 37m</h2>
+														<p class="txt-chapter-info">남은 학습시간</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="title-box">
+												<div class="fl">
+													<h2 class="title-sub-02">내 후기</h2>
+												</div>
+												<div class="fr">
+													<a href="#!" class="btn-cti-plus">더보기</a>
+												</div>
+											</div>
+											<div class="title-box mt30">
+												<div class="fl cti-score-box">
+													<span class="cti-star on"></span>
+													<span class="cti-star on"></span>
+													<span class="cti-star on"></span>
+													<span class="cti-star on"></span>
+													<span class="cti-star"></span>
+													<span class="cti-score">4.0</span>
+													<span class="cti-day">2021.09.01</span>
+												</div>
+												<div class="fr">
+													<span class="cti-like">3</span>
+												</div>
+											</div>
+											<div class="tit-info-02  mt20">
+												<div class="cti-box txt">
+													<p>
+														강사님이 참 친절하시고 아직 웹개발은 지식이 별로 없어서 뭘 어떻게 해야 할지 참 
+														막막했는데 덕분에 방향을 잡은 것 같습니다  제 개인적인 생각으로는 이 강의를 토
+														로 개발을 완전 처음 입문하시는 분이 이 정도로 코드를 구현하는 건 매우 힘든
+														이 정도로 코드를 구현하는 건 매우 힘든이 정도로 코드를 구현하는 건 매우 힘든
+														이 정도로 코드를 구현하는 건 매우 힘든이 정도로 코드를 구현하는 건 매우 힘든
+													</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<!-- 대시보드(E) -->
+
+								<!-- 교육소개(S) -->
+								<li class="ca-tab-item cti02">
+									<h4 class="title-01 green">교육 소개</h4>
+									<ul class="table-ul devide-2 mt25">
+										<li>
+											<h4 class="title-02">교육종류</h4>
+											<div class="tit-info">
+												<p class="txt-01">온라인교육(일반)</p>
+											</div>
+										</li>
+										<li>
+											<h4 class="title-02">교육대상</h4>
+											<div class="tit-info">
+												<p class="txt-01">신규농업인</p>
+											</div>
+										</li>
+										<li>
+											<h4 class="title-02">교육분류</h4>
+											<div class="tit-info">
+												<p class="txt-01">농업</p>
+											</div>
+										</li>
+										<li>
+											<h4 class="title-02">난이도</h4>
+											<div class="tit-info">
+												<p class="txt-01">초급</p>
+											</div>
+										</li>
+										<li>
+											<h4 class="title-02">정원</h4>
+											<div class="tit-info">
+												<p class="txt-01">0명
+											</p></div>
+										</li>
+										<li>
+											<h4 class="title-02">신청기간</h4>
+											<div class="tit-info">
+												<p class="txt-01">2021.05.18 ~ 2021.05.31</p>
+											</div>
+										</li>
+										<li>
+											<h4 class="title-02">교육기간</h4>
+											<div class="tit-info">
+												<p class="txt-01">2021.05.18 ~ 2021.05.31
+											</p></div>
+										</li>
+									</ul>
+									<ul class="table-ul mt25">
+										<li>
+											<h4 class="title-02 point">교육목표</h4>
+											<div class="tit-info">
+												<p class="txt-02">주요 소득 작목의 선정 기준과 방법을 이해하고 적용할 수 있다.</p>
+												<p class="txt-02">선정된 작목의 다양한 소득증대 방안을 모색하고 판매 전략을 수립할 수 있다.</p>
+											</div>
+										</li>
+										<li>
+											<h4 class="title-02">교육내용</h4>
+											<div class="tit-info">
+												<p class="txt-02">1회차 농업경영의 의의와 목표의 이해</p>
+												<p class="txt-02">2회차 성공 농업경영의 정의와 달성 방법</p>
+												<p class="txt-02">3회차 주요 소득 작목 선정의 기준과 방법</p>
+												<p class="txt-02">4회차 선정된 작목의 소득증대 방안 마련 및 실행</p>
+												<p class="txt-02">5회차 농업소득증대를 위한 판매 전략</p>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<!-- 교육소개(E) -->
+
+								<!-- 교육목차(S) -->
+								<li class="ca-tab-item cti03">
+									<h4 class="title-01 green">교육 목차<spanc class="txt-02 ml10">총 8강 (2h12m)</spanc></h4>
+									<ul class="table-ul mt25">
+										<li>
+											<h4 class="title-02">강의목차</h4>
+											<div class="tit-info">
+												<div class="about-class">
+													<h4 class="title-03">01.농업교육 기초</h4>
+													<ul>
+														<li>
+															<span class="chapter">1강</span>
+															<span class="c-part">오리엔테이션</span>
+															<span class="c-time">08:03</span>
+															<a href="#!" class="btn-play">미리보기</a>
+														</li>
+													</ul>
+		
+													<h4 class="title-03">02.농지이용 및 관리과정</h4>
+													<ul>
+														<li>
+															<span class="chapter">1강</span>
+															<span class="c-part">농지정책</span>
+															<span class="c-time">08:03</span>
+															<a href="#!" class="btn-play">미리보기</a>
+														</li>
+														<li>
+															<span class="chapter">2강</span>
+															<span class="c-part">농지관련 조세제도</span>
+															<span class="c-time">08:03</span>
+															<a href="#!" class="btn-play">미리보기</a>
+														</li>
+														<li>
+															<span class="chapter">3강</span>
+															<span class="c-part">농지은행사업Ⅰ</span>
+															<span class="c-time">08:03</span>
+															<a href="#!" class="btn-play">미리보기</a>
+														</li>
+														<li>
+															<span class="chapter">4강</span>
+															<span class="c-part">농지은행사업 Ⅱ</span>
+															<span class="c-time">08:03</span>
+															<a href="#!" class="btn-play">미리보기</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<!-- 교육목차(E) -->
+
+								<!-- 수강후기(S) -->
+								<li class="ca-tab-item cti04">
+									<h4 class="title-01 green">수강 후기</h4>
+									<ul class="table-ul devide-3 mt25">
+										<li class="lec-after">
+											<p class="la-txt">수강후기</p>
+											<p class="la-tit">33개</p>
+										</li>
+										<li class="lec-score">
+											<div class="fl">
+												<p class="ls-tit">4.6</p>
+												<div class="ls-star-box">
+													<span class="ls-star on"></span>
+													<span class="ls-star on"></span>
+													<span class="ls-star on"></span>
+													<span class="ls-star on"></span>
+													<span class="ls-star"></span>
+												</div>
+											</div>
+											<div class="fr">
+												<div class="lec-score-percent">
+													<div class="lsp-average"><span class="lsp-tit">5점</span><div class="lsp-bar"><span class="lsp-bar-per" style="width:50%"></span></div></div>
+													<div class="lsp-average"><span class="lsp-tit">4점</span><div class="lsp-bar"><span class="lsp-bar-per" style="width:50%"></span></div></div>
+													<div class="lsp-average"><span class="lsp-tit">3점</span><div class="lsp-bar"><span class="lsp-bar-per best" style="width:80%"></span></div></div>
+													<div class="lsp-average"><span class="lsp-tit">2점</span><div class="lsp-bar"><span class="lsp-bar-per" style="width:50%"></span></div></div>
+													<div class="lsp-average"><span class="lsp-tit">1점</span><div class="lsp-bar"><span class="lsp-bar-per" style="width:50%"></span></div></div>
+												</div>
+											</div>
+										</li>
+										<li class="lec-write">
+											<a href="#!" class="btn-write-lec">후기 작성하기</a>
+										</li>
+									</ul>	
+
+									<div class="title-box sort mt50">
+										<div class="fr">
+											<a href="#!" class="btn-sort on">최신순</a>
+											<a href="#!" class="btn-sort">평점 높은 순</a>
+											<a href="#!" class="btn-sort">평점 낮은 순</a>
+											<a href="#!" class="btn-sort">좋아요 순</a>
+										</div>
+									</div>
+
+									<ul class="cti-preview-products mt20">
+										<li class="cti-preview-item">
+											<h4 class="pi-name">김사과</h4>
+											<div class="pi-info">
+												<div class="pi-star-box">
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star"></span>
+													<span class="pi-score">4.0</span>
+													<span class="pi-day">2021.09.01</span>
+												</div>
+												<p class="pi-txt">강사님이 참 친절하시고 아직 웹개발은 지식이 별로 없어서 뭘 어떻게 해야 할지 참 막막했는데 덕분에 방향을 잡은 것 같습니다 
+													제 개인적인 생각으로는 이 강의를 토대로 개발을 완전 처음 입문하시는 분이 이 정도로 코드를 구현하는 건 매우 힘든 일인 것 같아요. 
+													다만, 자신이 어떻게 공부를 해야 하고, 이 언어의 특징이 무엇인지, 웹 개발에는 어떤 언어가 쓰이는지 등등 처음에 큰 뼈대를 지을 수 있는 
+													강의인 것 같아요! 좋은 강의 잘 듣고 갑니다! 저는 완강했지만 2번 정도는 처음부터 정독 할 것 같아요!</p>
+											</div>
+											<a href="#!" class="pi-like on"><span></span>130</a>
+										</li>
+										<li class="cti-preview-item">
+											<h4 class="pi-name">김사과</h4>
+											<div class="pi-info">
+												<div class="pi-star-box">
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star"></span>
+													<span class="pi-score">4.0</span>
+													<span class="pi-day">2021.09.01</span>
+												</div>
+
+												<span class="main-image">
+													<img src="../img/main-image.png" alt="메인이미지">
+												</span>
+												
+												<p class="pi-txt">강사님이 참 친절하시고 아직 웹개발은 지식이 별로 없어서 뭘 어떻게 해야 할지 참 막막했는데 덕분에 방향을 잡은 것 같습니다 
+													제 개인적인 생각으로는 이 강의를 토대로 개발을 완전 처음 입문하시는 분이 이 정도로 코드를 구현하는 건 매우 힘든 일인 것 같아요. 
+													다만, 자신이 어떻게 공부를 해야 하고, 이 언어의 특징이 무엇인지, 웹 개발에는 어떤 언어가 쓰이는지 등등 처음에 큰 뼈대를 지을 수 있는 
+													강의인 것 같아요! 좋은 강의 잘 듣고 갑니다! 저는 완강했지만 2번 정도는 처음부터 정독 할 것 같아요!</p>
+											</div>
+											<a href="#!" class="pi-like on"><span></span>130</a>
+
+											
+										</li>
+										<li class="cti-preview-item">
+											<h4 class="pi-name">김사과</h4>
+											<div class="pi-info">
+												<div class="pi-star-box">
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star"></span>
+													<span class="pi-score">4.0</span>
+													<span class="pi-day">2021.09.01</span>
+												</div>
+												<p class="pi-txt">강사님이 참 친절하시고 아직 웹개발은 지식이 별로 없어서 뭘 어떻게 해야 할지 참 막막했는데 덕분에 방향을 잡은 것 같습니다 
+													제 개인적인 생각으로는 이 강의를 토대로 개발을 완전 처음 입문하시는 분이 이 정도로 코드를 구현하는 건 매우 힘든 일인 것 같아요. 
+													다만, 자신이 어떻게 공부를 해야 하고, 이 언어의 특징이 무엇인지, 웹 개발에는 어떤 언어가 쓰이는지 등등 처음에 큰 뼈대를 지을 수 있는 
+													강의인 것 같아요! 좋은 강의 잘 듣고 갑니다! 저는 완강했지만 2번 정도는 처음부터 정독 할 것 같아요!</p>
+											</div>
+											<a href="#!" class="pi-like on"><span></span>130</a>
+										</li>
+										<li class="cti-preview-item">
+											<h4 class="pi-name">김사과</h4>
+											<div class="pi-info">
+												<div class="pi-star-box">
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star"></span>
+													<span class="pi-score">4.0</span>
+													<span class="pi-day">2021.09.01</span>
+												</div>
+												<p class="pi-txt">강사님이 참 친절하시고 아직 웹개발은 지식이 별로 없어서 뭘 어떻게 해야 할지 참 막막했는데 덕분에 방향을 잡은 것 같습니다 
+													제 개인적인 생각으로는 이 강의를 토대로 개발을 완전 처음 입문하시는 분이 이 정도로 코드를 구현하는 건 매우 힘든 일인 것 같아요. 
+													다만, 자신이 어떻게 공부를 해야 하고, 이 언어의 특징이 무엇인지, 웹 개발에는 어떤 언어가 쓰이는지 등등 처음에 큰 뼈대를 지을 수 있는 
+													강의인 것 같아요! 좋은 강의 잘 듣고 갑니다! 저는 완강했지만 2번 정도는 처음부터 정독 할 것 같아요!</p>
+											</div>
+											<a href="#!" class="pi-like"><span></span>130</a>
+										</li>
+										<li class="cti-preview-item">
+											<h4 class="pi-name">김사과</h4>
+											<div class="pi-info">
+												<div class="pi-star-box">
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star on"></span>
+													<span class="pi-star"></span>
+													<span class="pi-score">4.0</span>
+													<span class="pi-day">2021.09.01</span>
+												</div>
+												<p class="pi-txt">강사님이 참 친절하시고 아직 웹개발은 지식이 별로 없어서 뭘 어떻게 해야 할지 참 막막했는데 덕분에 방향을 잡은 것 같습니다 
+													제 개인적인 생각으로는 이 강의를 토대로 개발을 완전 처음 입문하시는 분이 이 정도로 코드를 구현하는 건 매우 힘든 일인 것 같아요. 
+													다만, 자신이 어떻게 공부를 해야 하고, 이 언어의 특징이 무엇인지, 웹 개발에는 어떤 언어가 쓰이는지 등등 처음에 큰 뼈대를 지을 수 있는 
+													강의인 것 같아요! 좋은 강의 잘 듣고 갑니다! 저는 완강했지만 2번 정도는 처음부터 정독 할 것 같아요!</p>
+											</div>
+											<a href="#!" class="pi-like on"><span></span>130</a>
+										</li>
+									</ul>
+								</li>
+								<!-- 수강후기(E) -->
+
+
+							</ul>
+						</div>						
+
+					</div>
+					<!-- sub-left(E) -->
+
+					<!-- sub-right(S) -->
+					<div class="sub-right" id="rightSide">
+
+						<!-- search(S) -->
+						<!-- 결제전(S) -->
+						<div class="search green pay-before">
+							<div class="em-fr-in">
+								<div class="em-smart">
+									<a href="#!" class="em-ico basket"></a>
+									<a href="#!" class="em-ico share"></a>
+									<a href="#!" class="em-ico like"><span class="num">1,060</span></a>
+								</div>
+								<span class="em-ico online">온라인</span>
+								<h2 class="em-title-01">20221 농업교육 초급</h2>
+								<div class="about-edu ae01">
+									<div class="fl">
+										<h4 class="ae-title-01">홍길동강사</h4>
+									</div>
+									<div class="fr">
+										<span class="ae-star on"></span>
+										<span class="ae-star on"></span>
+										<span class="ae-star on"></span>
+										<span class="ae-star on"></span>
+										<span class="ae-star"></span>
+										<span class="ae-score">4.0</span>
+									</div>
+								</div>
+								<ul class="about-edu ae02">
+									<li class="ae-items">
+										<span class="aei-title-01">교육대상</span>
+										<span class="aei-name">전문농업인</span>
+									</li>
+									<li class="ae-items">
+										<span class="aei-title-01">난이도</span>
+										<span class="aei-name">고급이상</span>
+									</li>
+									<li class="ae-items">
+										<span class="aei-title-01">교육 분류</span>
+										<span class="aei-name">농업 &gt; 쌀</span>
+									</li>
+									<li class="ae-items">
+										<span class="aei-title-01">수강기간</span>
+										<span class="aei-name">무제한</span>
+									</li>
+								</ul>
+								<div class="about-edu ae03">
+									<h4 class="ae-total-time fl">총 8강(2h 12m)</h4>
+									<h4 class="ae-price fr">총 8강(2h 12m)</h4>
+								</div>
+								
+							</div>
+							<button class="btn-search">143,000 원 결제하기</button>
+						</div>
+						<!-- 결제전(E) -->
+
+
+						<!-- 결제후(S) -->
+						<div class="search green pay-after">
+							<div class="em-fr-in">
+								<div class="em-smart">
+									<a href="#!" class="em-ico basket"></a>
+									<a href="#!" class="em-ico share"></a>
+									<a href="#!" class="em-ico like"><span class="num">1,060</span></a>
+								</div>
+								<span class="em-ico online">온라인</span>
+								<h2 class="em-title-01">20221 농업교육 초급</h2>
+								<div class="about-edu ae01">
+									<div class="fl">
+										<h4 class="ae-title-01">홍길동강사</h4>
+									</div>
+									<div class="fr">
+										<span class="ae-star on"></span>
+										<span class="ae-star on"></span>
+										<span class="ae-star on"></span>
+										<span class="ae-star on"></span>
+										<span class="ae-star"></span>
+										<span class="ae-score">4.0</span>
+									</div>
+								</div>
+								<ul class="about-edu ae02">
+									<li class="ae-items">
+										<span class="aei-title-01">교육대상</span>
+										<span class="aei-name">전문농업인</span>
+									</li>
+									<li class="ae-items">
+										<span class="aei-title-01">난이도</span>
+										<span class="aei-name">고급이상</span>
+									</li>
+									<li class="ae-items">
+										<span class="aei-title-01">교육 분류</span>
+										<span class="aei-name">농업 &gt; 쌀</span>
+									</li>
+									<li class="ae-items">
+										<span class="aei-title-01">수강기간</span>
+										<span class="aei-name">무제한</span>
+									</li>
+								</ul>
+								<div class="about-edu ae03">
+									<div class="edu-progress">
+										<div class="ep-percent">
+											<div class="ep-bar"><span class="ep-bar-per" style="width:40%;"></span></div>
+										</div>
+									</div>
+									<h4 class="ae-total-time fl">진도율</h4>
+									<h4 class="ae-price fr"><span class="now">2강</span>28강(23.7%)</h4>
+								</div>
+
+
+
+
+								
+							</div>
+							<button class="btn-search">이어 수강하기</button>
+						</div>
+						<!-- 결제후(E) -->
+						<!-- search(E) -->
+
+					</div>
+					<!-- sub-right(E) -->
+
+				</div>
+			</div>
+			<!-- sub-contents(E) -->
+
+			
+						<!-- footer(S) -->
+			<div class="footer">
+				<div class="f_in">
+					
+					<a href="#!" class="f-logo">
+						<img src="../img/footer/footer_logo.png" alt="footerlogo" />
+					</a>
+
+					<div class="f-nav">
+						<a href="#!">개인정보처리방침</a>
+						<a href="#!">이용약관</a>
+					</div>
+
+					<p class="f-address">서울시 서초구 강남대로 27 aT센터 1302호</p>
+					<p class="f-copyright">Copyright © <span>에이콘컴퍼니</span> All rights.</p>
+				</div>
+			</div>
+			<!-- footer(E) -->
+
+		</div>
+	</div>
+	<!-- wrap(E) -->
+
+	<!-- mobile-menu(S) -->
+<div id="lnb" class="mobile-menu">
+    <!-- <div class="dim"></div> -->
+
+    <div class="mm_top">
+		<!-- before-log(S) -->
+        <!-- <div class="m_log after-log">
+            <a href="#!">로그인</a>
+            <a href="#!">회원가입</a>
+        </div> -->
+		<!-- before-log(E) -->
+
+		<!-- after-log(S) -->
+		<div class="m_log after-log">
+            <a href="#!"><span class="al-name">교육대상자</span>님 환영합니다!</a>
+        </div>
+		<!-- after-log(E) -->
+		
+        <a href="#!" id="btnCloseMobileMenu" class="m-btn-close"><img src="../img/m_lnb_close.png" alt="모바일lnb닫기버튼"></a>
+    </div>
+    
+    <ul class="lnb_box">
+      <li><a href="#!">교육관리</a>
+        <ul style="display: none;">
+          <li class="noDepth"><a href="#!">교육 조회 및 수강신청</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="#!">컨텐츠관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">게시판</a>
+        <ul>
+          <li class="noDepth"><a href="#!">공지사항</a></li>
+          <li class="noDepth"><a href="#!">농업교육 익명 게시판</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">통계현황</a>
+      <ul>
+          <li class="noDepth"><a href="#!">사용자 등록 현황</a></li>
+          <li class="noDepth"><a href="#!">교육자 실시간 현황</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 제공자 현황</a></li>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+		</ul>
+      </li>
+      <li><a href="#!">시스템관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">기간 관리</a></li>
+          <li class="noDepth"><a href="#!">사용자 관리</a></li>
+          <li class="noDepth"><a href="#!">프로그램 관리</a></li>
+          <li class="noDepth"><a href="#!">메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">기관메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">개인메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통코드 관리</a></li>
+          <li class="noDepth"><a href="#!">게시판구성 관리</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">마이페이지</a>
+        <ul>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+          <li><a href="#!">교육관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">교육이력</a></li>
+				<li class="noDepth"><a href="#!">수강후기</a></li>
+				<li class="noDepth"><a href="#!">좋아요 한 교육</a></li>
+			</ul>
+		  </li>
+          <li><a href="#!">결제관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">강의바구니</a></li>
+				<li class="noDepth"><a href="#!">구매이력</a></li>
+				<li class="noDepth"><a href="#!">나의 포인트</a></li>
+			</ul>
+		  </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<!-- mobile-menu(E) -->		
+
+
+</body>
+</html>
+
+

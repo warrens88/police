@@ -1,0 +1,301 @@
+<!DCTYPE html> 
+<head>
+	<title>슈퍼관리자 worklist</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+	<meta name="keywords" content="" />
+	<meta name="description" Content="">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<style type="text/css">
+	html{}
+	h1{margin:10px 0; width:100%; text-align:center; color:gray; font-size:25px; position:relative; }
+	.workwrap{width:100%; margin:0 auto; padding-bottom: 50px;}
+	.workwrap .issue { margin-top: 10px; }
+	.workwrap .issue h4 { margin: 0; }
+	.workwrap .issue ol { margin: 5px 0; }
+	.workwrap table.worktable{width:100%; font-size:14px; letter-spacing:-1px; border-collapse:collapse;}
+	.workwrap table.worktable th{border-bottom:1px solid #000; border-top:1px solid #000; border-left:1px solid #000; border-right:1px solid #000; background:#000; color:#fff; padding:15px 0;}
+	.workwrap table.worktable td{border-bottom:1px solid #000; border-top:1px solid #000; border-left:1px solid #000; border-right:1px solid #000; background:#fff; text-align:center; font-size:13px; padding:8px 5px;}
+	.workwrap table.worktable td:nth-of-type(2){/* font-weight:bold; */}
+	.workwrap table.worktable td a { text-decoration: none; color: #171C61; }
+	.workwrap table.worktable td a:visited,
+	.workwrap table.worktable td a:active,
+	.workwrap table.worktable td a:focus { text-decoration: none;  }
+	.workwrap table.worktable tr.finish_page td{background:yellow!important;}
+	.ing_page{background-color:red!important;}
+	table tr td:nth-child(2){text-align:left;}
+	.title{margin-top:50px; font-size:20px; color:#222; padding:10px 0;letter-spacing:-2px; margin-bottom:50px;}
+	</style>
+	 
+
+<script type="text/javascript">
+	
+	jQuery(function(){
+		jQuery(".worktable tr").each(function(){ 
+			var trindex = jQuery(this).index();			
+			jQuery(this).find("td:first-child").text(trindex);
+		});
+	});
+	
+</script>
+
+<head>
+
+</head>
+<html>
+<body>
+	<h1 class="title">농업교육클라우드 SaaS플랫폼</h1>	
+	<p style="font-weight:bold;">작업내용</p>
+	<p>1. 반응형 작업 완료</p>
+	<p>2. 01_마이페이지-01_교육대상자-02_교육관리-01_교육이력_좋아요한교육 >> 일반동영상태그 추가 및 교체</p>
+	<p>3. 01_마이페이지-01_교육대상자-03_결제관리-02_구매이력 >> present-condition 옆 pay-history 추가 , 우측 조회창 타이틀 추가</p>
+	<p>4. 01_마이페이지-01_교육대상자-03_결제관리-03_나의포인트	 >>  present-condition 옆  my-point 추가</p>
+	<p>5. 01_마이페이지-02_컨텐츠제공자-01_대시보드 >> 우측 조회창 타이틀 추가</p>
+	<p>6. 02_교육관리-01_목록 >> 우측 조회창 타이틀 추가</p>
+	<p>7. 02_교육관리-03_QR체크 >> 우측 수강완료, 수강진행중 위치 변경</p>
+	<p>8. 03_컨텐츠관리-01_목록  >> present-condition 옆 cont-list 추가, 우측 조회창 타이틀 추가, 코멘트 추가 </p>
+	<p>9. 03_컨텐츠관리-02_상세    >> 교육파일 다운로드 버튼 추가</p>
+	<p>10. 03_컨텐츠관리-03_등록+수정+팝업  >> 교육파일 다운로드 버튼 추가</p>
+	
+	<div class="workwrap">
+		<table class="worktable">
+			<colgroup>
+				<col style="width:5%">
+				<col style="width:35%">
+				<col style="width:15%">
+				<col style="width:15%">
+				<col style="width:5%">
+				<col style="width:10%">
+			</colgroup>
+			<tr>
+				<th>No.</th>
+				<th>페이지명</th>
+				<th>파일명</th>
+				<th>완료여부</th>
+				<th>완료날짜</th>
+				<th>비고</th>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>공통</td>
+				<td><a href="./html/00_공통.html" target="_blank">00_공통.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td></td>
+			</tr>
+			<tr> 
+				<td>number</td>
+				<td>MAIN</td>
+				<td><a href="./html/00_메인.html" target="_blank">01_메인.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>반응형 완료</td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>00-01_로그인</td>
+				<td><a href="./html/00-01_로그인.html" target="_blank">00-01_로그인.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>00-02_ID+PW찾기</td>
+				<td><a href="./html/00-02_ID+PW찾기.html" target="_blank">00-02_ID+PW찾기.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>00-03_ID+PW확인</td>
+				<td><a href="./html/00-03_ID+PW확인.html" target="_blank">00-03_ID+PW확인.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>00-04_ID+PW교육대상자회원가입</td>
+				<td><a href="./html/00-04_ID+PW교육대상자회원가입.html" target="_blank">00-04_ID+PW교육대상자회원가입.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td></td>
+			</tr>		
+			<tr class="finish_page">
+				<td>number</td>
+				<td>01_마이페이지-01_교육대상자-01_대시보드</td>
+				<td><a href="./html/01_마이페이지-01_교육대상자-01_대시보드.html" target="_blank">01_마이페이지-01_교육대상자-01_대시보드.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>일반동영상태그 추가 및 교체</td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>01_마이페이지-01_교육대상자-02_교육관리-01_교육이력_좋아요한교육</td>
+				<td><a href="./html/01_마이페이지-01_교육대상자-02_교육관리-01_교육이력_좋아요한교육.html" target="_blank">01_마이페이지-01_교육대상자-02_교육관리-01_교육이력_좋아요한교육.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>01_마이페이지-01_교육대상자-02_교육관리-02_수강후기+수정팝업</td>
+				<td><a href="./html/01_마이페이지-01_교육대상자-02_교육관리-02_수강후기+수정팝업.html" target="_blank">01_마이페이지-01_교육대상자-02_교육관리-02_수강후기+수정팝업.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>01_마이페이지-01_교육대상자-03_결제관리-01_강의바구니</td>
+				<td><a href="./html/01_마이페이지-01_교육대상자-03_결제관리-01_강의바구니.html" target="_blank">01_마이페이지-01_교육대상자-03_결제관리-01_강의바구니.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="finish_page">
+				<td>number</td>
+				<td>01_마이페이지-01_교육대상자-03_결제관리-02_구매이력</td>
+				<td><a href="./html/01_마이페이지-01_교육대상자-03_결제관리-02_구매이력.html" target="_blank">01_마이페이지-01_교육대상자-03_결제관리-02_구매이력.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>present-condition 옆 pay-history 추가 , 우측 조회창 타이틀 추가</td>
+			</tr>
+			<tr class="finish_page">
+				<td>number</td>
+				<td>01_마이페이지-01_교육대상자-03_결제관리-03_나의포인트</td>
+				<td><a href="./html/01_마이페이지-01_교육대상자-03_결제관리-03_나의포인트.html" target="_blank">01_마이페이지-01_교육대상자-03_결제관리-03_나의포인트.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>  present-condition 옆  my-point 추가</td>
+			</tr>
+			<tr class="finish_page">
+				<td>number</td>
+				<td>01_마이페이지-02_컨텐츠제공자-01_대시보드</td>
+				<td><a href="./html/01_마이페이지-02_컨텐츠제공자-01_대시보드.html" target="_blank">01_마이페이지-02_컨텐츠제공자-01_대시보드.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>우측 조회창 타이틀 추가</td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>01_마이페이지-02_컨텐츠제공자-02_목록</td>
+				<td><a href="./html/01_마이페이지-02_컨텐츠제공자-02_목록.html" target="_blank">01_마이페이지-02_컨텐츠제공자-02_목록.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>header 스타일 분류</td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>01_마이페이지-02_컨텐츠제공자-03_상세</td>
+				<td><a href="./html/01_마이페이지-02_컨텐츠제공자-03_상세.html" target="_blank">01_마이페이지-02_컨텐츠제공자-03_상세.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>header 스타일 분류</td>
+			</tr>
+			<tr class="finish_page">
+				<td>number</td>
+				<td>02_교육관리-01_목록</td>
+				<td><a href="./html/02_교육관리-01_목록.html" target="_blank">02_교육관리-01_목록.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>우측 조회창 타이틀 추가 </td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>02_교육관리-02_상세</td>
+				<td><a href="./html/02_교육관리-02_상세.html" target="_blank">02_교육관리-02_상세.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td></td>
+			</tr>	
+			<tr class="finish_page">
+				<td>number</td>
+				<td>02_교육관리-03_QR체크</td>
+				<td><a href="./html/02_교육관리-03_QR체크.html" target="_blank">02_교육관리-03_QR체크.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>우측 수강완료, 수강진행중 아이콘 위치 변경</td>
+			</tr>	
+			<tr class="finish_page">
+				<td>number</td>
+				<td>03_컨텐츠관리-01_목록</td>
+				<td><a href="./html/03_컨텐츠관리-01_목록.html" target="_blank">03_컨텐츠관리-01_목록.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>present-condition 옆 cont-list 추가, 우측 조회창 타이틀 추가, 코멘트 추가</td>
+			</tr>
+			<tr class="finish_page">
+				<td>number</td>
+				<td>03_컨텐츠관리-02_상세</td>
+				<td><a href="./html/03_컨텐츠관리-02_상세.html" target="_blank">03_컨텐츠관리-02_상세.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>교육파일 다운로드 버튼 추가</td>
+			</tr>
+			<tr class="finish_page">
+				<td>number</td>
+				<td>03_컨텐츠관리-03_등록+수정+팝업</td>
+				<td><a href="./html/03_컨텐츠관리-03_등록+수정+팝업.html" target="_blank">03_컨텐츠관리-03_등록+수정+팝업.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>교육파일 다운로드 버튼 추가 </td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>03_컨텐츠관리-04_등록완료</td>
+				<td><a href="./html/03_컨텐츠관리-04_등록완료.html" target="_blank">03_컨텐츠관리-04_등록완료.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>04_게시판-01_목록</td> 
+				<td><a href="./html/04_게시판-01_목록.html" target="_blank">04_게시판-01_목록.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>04_게시판-02_상세</td>
+				<td><a href="./html/04_게시판-02_상세.html" target="_blank">04_게시판-02_상세.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>04_게시판-03_등록+수정</td>
+				<td><a href="./html/04_게시판-03_등록+수정.html" target="_blank">04_게시판-03_등록+수정.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>06_시스템관리-01_목록</td>
+				<td><a href="./html/06_시스템관리-01_목록.html" target="_blank">06_시스템관리-01_목록.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>header 스타일 분류 <br/> 트리테이블 추가</td>
+			</tr>
+			<tr>
+				<td>number</td>
+				<td>06_시스템관리-02_상세</td>
+				<td><a href="./html/06_시스템관리-02_상세.html" target="_blank">06_시스템관리-02_상세.html</a></td>
+				<td>○</td> 
+				<td></td>
+				<td>header 스타일 분류 <br/> 트리메뉴 추가</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

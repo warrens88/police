@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTf-8">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>메인</title>
+
+<!-- CSS(S) -->
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/font.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../css/mobile.css">
+<!--CSS(E) -->
+
+<!-- SCRIPT(S) -->
+<script type="text/javascript" src="../js/script.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- SCRIPT(E) -->
+
+</head>
+
+<body> 
+	<!-- warp(S) -->
+	<div class="wrap">
+		<div class="w_in">
+
+
+			<!-- header(S) -->
+			<div class="header" id="header">
+
+				<a href="#!" class="h-logo">
+					<img src="../img/header/header_logo.png" alt="logo" />
+				</a>
+
+				<ul class="nav" >
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">교육관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">교육 조회 및 수강신청</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">컨텐츠관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+							<li><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">게시판</a></div>
+						<ul class="subnav">
+							<li><a href="#!">공지사항</a></li>
+							<li><a href="#!">농업교육 익명 게시판</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">통계현황</a></div>
+						<ul class="subnav">
+							<li><a href="#!">사용자 등록 현황</a></li>
+							<li><a href="#!">교육자 실시간 현황</a></li>
+							<li><a href="#!">컨텐츠 제공자 현황</a></li>
+							<li><a href="#!">대시보드</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">시스템관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">기관 관리</a></li>
+							<li><a href="#!">사용자 관리</a></li>
+							<li><a href="#!">프로그램 관리</a></li>
+							<li><a href="#!">메뉴 관리</a></li>
+							<li><a href="#!">공통메뉴 관리</a></li>
+							<li><a href="#!">기관메뉴 관리</a></li>
+							<li><a href="#!">개인메뉴 관리</a></li>
+							<li><a href="#!">공통코드 관리</a></li>
+							<li><a href="#!">게시판구성 관리</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+<!-- 로그인 후(S) -->				
+				<p class="welcome-user"><span class="user-name">시스템관리자</span>님 환영합니다!</p>
+
+				<div class="iconbox">
+					<a href="#!" class="icon bell"><img src="../img/header/bell.png" alt="알림"/><span class="letters">2</span></a>
+					<a href="#!" class="icon set"><img src="../img/header/set.png" alt="설정"/></a>
+					<a href="#!" class="icon logout"><img src="../img/header/logout.png" alt="로그아웃"/></a>
+				</div>
+
+				<a href="#!" class="btn_mobile-menu btn_lnb"><img src="../img/menu_icon.png" alt="모바일메뉴버튼"></a>
+<!-- 로그인 후(E) -->								
+
+<!-- 로그인 전(S) -->
+				<div class="log-before">
+					<a href="#!" class="h-log">로그인</a>
+					<a href="#!" class="h-sign">회원가입</a>
+				</div>
+<!-- 로그인 전(E) -->
+
+<!-- btn-mobile-menu(S) -->
+				<a href="#!" id="btnMobileMenu" class="btn-mobile-menu"><span>MENU</span></a>
+<!-- btn-mobile-menu(E) -->
+
+<!-- btn-mobile-search(S) -->
+				<a href="#!" class="btn-mobile-search dn" id="btnOpenRight"><span>+</span></a>
+<!-- btn-mobile-search(E) -->
+
+			</div>	
+			<!-- header(E) -->
+
+			<!-- main-contents-top(S) -->
+			<div class="main-contents-top">
+				
+				<div class="mct-left">
+					<img class="mobile-bg" src="../img/main-bg-mobile.jpg" alt="모바일메인이미지">
+					<h1 class="main-slogan">
+						농업교육 클라우드  SaaS 플랫폼
+						<br/>
+						방문을 환영합니다!
+					</h1>
+				</div>
+				<div class="mct-right">
+					<!-- 조회현황(S) -->
+					<div class="edu-now">
+						<h4 class="edu-text">
+							현재 <span class="center-num">2</span>개 기관에서<br/>
+							<span class="edu-num">10</span>개 교육이 접수중입니다.
+						</h4>
+						<a href="#!" class="btn-edu-go">교육조회 바로가기 ></a>
+					</div>
+					<!-- 조회현황(E) -->
+
+					<!-- 교육목록(S) -->
+					<div class="edu-list">
+						<ul>
+							<li>
+								<a href="#!">
+									<div class="el-img">
+										<img src="../img/list-01.png" alt="list01">
+									</div>
+									<div class="el-info">
+										<span class="kind new">NEW</span>
+										<h4 class="el-name">2021 농업교육초급농업교육초급농업교육초급농업교육초급</h4>
+										<p class="el-time">35min</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="el-img">
+										<img src="../img/list-02.png" alt="list02">
+									</div>
+									<div class="el-info">
+										<h4 class="el-name">#2.농지관련조세세세세</h4>
+										<p class="el-time">52min</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<div class="el-img">
+										<img src="../img/list-03.png" alt="list03">
+									</div>
+									<div class="el-info">
+										<span class="kind event">EVENT</span>
+										<h4 class="el-name">2021 농지관련조세세세세</h4>
+										<p class="el-time">52min</p>
+									</div>
+								</a>
+							</li>
+							
+							<li>
+								<a href="#!">
+									<div class="el-img">
+										<img src="../img/list-01.png" alt="list04">
+									</div>
+									<div class="el-info">
+										<span class="kind hot">HOT</span>
+										<h4 class="el-name">2021 농지관련조세세세세</h4>
+										<p class="el-time">52min</p>
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a href="#!">
+									<div class="el-img">
+										<img src="../img/list-01.png" alt="list04">
+									</div>
+									<div class="el-info">
+										<span class="kind hot">HOT</span>
+										<h4 class="el-name">2021 농지관련조세세세세</h4>
+										<p class="el-time">52min</p>
+									</div>
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+					<!-- 교육목록(E) -->
+				</div>
+			</div>
+			<!-- main-contents-top(E) -->
+
+			<!-- main-contents-bottom(S) -->
+			<div class="main-contents-bottom">
+				<div class="mcb-left">
+					<div class="title-box-main">
+						<div class="fl">
+							<h4 class="title-main">공지사항</h4>
+						</div>
+						<div class="fr">
+							<a href="#!" class="btn-notice-more">더보기</a>
+						</div>
+					</div>
+
+					<div class="table-main-notice">
+						<ul>
+							<li>
+								<a href="#!" class="n-info">홈페이지 오픈 이벤트 (~9/1)   농업교육 클라우드 플랫폼이 오픈하였습니다.  농업교육 클라우드 플랫폼이 오픈하였습니다.  농업교육 클라우드 플랫폼이 오픈하였습니다.  농업교육 클라우드 플랫폼이 오픈하였습니다.  농업교육 클라우드 플랫폼이 오픈하였습니다. </a>
+								<a href="#!" class="n-day">2021.08.01</a>
+							</li>
+							<li>
+								<a href="#!" class="n-info">코로나 4단계 격상에 따른 오프라인 강의 변동</a>
+								<a href="#!" class="n-day">2021.08.01</a>
+							</li>
+							<li>
+								<a href="#!" class="n-info">8월 정규과정 (총 252개) 개설안내</a>
+								<a href="#!" class="n-day">2021.08.01</a>
+							</li>
+							<li>
+								<a href="#!" class="n-info">홈페이지 시스템정기작업 안내 ( 2021-09-21 화요일 18:00 ~ 20:00) </a>
+								<a href="#!" class="n-day">2021.08.01</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mcb-right">
+					<div class="main-button-box">
+						<a href="#!" class="btn-type-main">서비스 이용안내</a>
+						<a href="#!" class="btn-type-main">익명게시판</a>
+					</div>
+				</div>
+			</div>
+			<!-- main-contents-bottom(E) -->
+
+			<!-- footer(S) -->
+			<div class="footer">
+				<div class="f_in">
+					
+					<a href="#!" class="f-logo">
+						<img src="../img/footer/footer_logo.png" alt="footerlogo" />
+					</a>
+
+					<div class="f-nav">
+						<a href="#!">개인정보처리방침</a>
+						<a href="#!">이용약관</a>
+					</div>
+
+					<p class="f-address">서울시 서초구 강남대로 27 aT센터 1302호</p>
+					<p class="f-copyright">Copyright © <span>에이콘컴퍼니</span> All rights.</p>
+				</div>
+			</div>
+			<!-- footer(E) -->
+
+			
+		</div>
+	</div>
+	<!-- wrap(E) -->
+
+	<!-- mobile-menu(S) -->
+<div id="lnb" class="mobile-menu">
+    <!-- <div class="dim"></div> -->
+
+    <div class="mm_top">
+		<!-- before-log(S) -->
+        <div class="m_log after-log">
+            <a href="#!">로그인</a>
+            <a href="#!">회원가입</a>
+        </div>
+		<!-- before-log(E) -->
+
+		<!-- after-log(S) -->
+		<!-- <div class="m_log after-log">
+            <a href="#!"><span class="al-name">교육대상자</span>님 환영합니다!</a>
+        </div> -->
+		<!-- after-log(E) -->
+		
+        <a href="#!" id="btnCloseMobileMenu" class="m-btn-close"><img src="../img/m_lnb_close.png" alt="모바일lnb닫기버튼"></a>
+    </div>
+    
+    <ul class="lnb_box">
+      <li><a href="#!">교육관리</a>
+        <ul style="display: none;">
+          <li class="noDepth"><a href="#!">교육 조회 및 수강신청</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="#!">컨텐츠관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">게시판</a>
+        <ul>
+          <li class="noDepth"><a href="#!">공지사항</a></li>
+          <li class="noDepth"><a href="#!">농업교육 익명 게시판</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">통계현황</a>
+      <ul>
+          <li class="noDepth"><a href="#!">사용자 등록 현황</a></li>
+          <li class="noDepth"><a href="#!">교육자 실시간 현황</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 제공자 현황</a></li>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+		</ul>
+      </li>
+      <li><a href="#!">시스템관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">기간 관리</a></li>
+          <li class="noDepth"><a href="#!">사용자 관리</a></li>
+          <li class="noDepth"><a href="#!">프로그램 관리</a></li>
+          <li class="noDepth"><a href="#!">메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">기관메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">개인메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통코드 관리</a></li>
+          <li class="noDepth"><a href="#!">게시판구성 관리</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">마이페이지</a>
+        <ul>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+          <li><a href="#!">교육관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">교육이력</a></li>
+				<li class="noDepth"><a href="#!">수강후기</a></li>
+				<li class="noDepth"><a href="#!">좋아요 한 교육</a></li>
+			</ul>
+		  </li>
+          <li><a href="#!">결제관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">강의바구니</a></li>
+				<li class="noDepth"><a href="#!">구매이력</a></li>
+				<li class="noDepth"><a href="#!">나의 포인트</a></li>
+			</ul>
+		  </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<!-- mobile-menu(E) -->		
+
+
+</body>
+</html>
+
+

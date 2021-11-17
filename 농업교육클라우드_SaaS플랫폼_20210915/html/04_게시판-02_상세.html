@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTf-8">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>04_게시판-02_상세</title>
+
+<!-- CSS(S) -->
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/font.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../css/mobile.css">
+<!--CSS(E) -->
+
+<!-- SCRIPT(S) -->
+
+<script type="text/javascript" src="../js/script.js"></script>
+
+
+<!-- SCRIPT(E) -->
+
+</head>
+
+<body> 
+	<!-- warp(S) -->
+	<div class="wrap">
+		<div class="w_in">
+			
+<!-- header(S) -->
+			<div class="header">
+
+				<a href="#!" class="h-logo">
+					<img src="../img/header/header_logo.png" alt="logo" />
+				</a>
+
+				<ul class="nav" >
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">교육관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">교육 조회 및 수강신청</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">컨텐츠관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+							<li><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">게시판</a></div>
+						<ul class="subnav">
+							<li><a href="#!">공지사항</a></li>
+							<li><a href="#!">농업교육 익명 게시판</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">통계현황</a></div>
+						<ul class="subnav">
+							<li><a href="#!">사용자 등록 현황</a></li>
+							<li><a href="#!">교육자 실시간 현황</a></li>
+							<li><a href="#!">컨텐츠 제공자 현황</a></li>
+							<li><a href="#!">대시보드</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">시스템관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">기관 관리</a></li>
+							<li><a href="#!">사용자 관리</a></li>
+							<li><a href="#!">프로그램 관리</a></li>
+							<li><a href="#!">메뉴 관리</a></li>
+							<li><a href="#!">공통메뉴 관리</a></li>
+							<li><a href="#!">기관메뉴 관리</a></li>
+							<li><a href="#!">개인메뉴 관리</a></li>
+							<li><a href="#!">공통코드 관리</a></li>
+							<li><a href="#!">게시판구성 관리</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+
+<!-- 로그인 후(S) -->				
+				<p class="welcome-user"><span class="user-name">시스템관리자</span>님 환영합니다!</p>
+
+				<div class="iconbox">
+					<a href="#!" class="icon bell"><img src="../img/header/bell.png" alt="알림"/><span class="letters">2</span></a>
+					<a href="#!" class="icon set"><img src="../img/header/set.png" alt="설정"/></a>
+					<a href="#!" class="icon logout"><img src="../img/header/logout.png" alt="로그아웃"/></a>
+				</div>
+
+				<a href="#!" class="btn_mobile-menu btn_lnb"><img src="../img/menu_icon.png" alt="모바일메뉴버튼"></a>
+<!-- 로그인 후(E) -->								
+
+<!-- 로그인 전(S) -->
+				<div class="log-before" style="display:none;">
+					<a href="#!" class="h-log">로그인</a>
+					<a href="#!" class="h-sign">회원가입</a>
+				</div>
+<!-- 로그인 전(E) -->
+
+<!-- btn-mobile-menu(S) -->
+				<a href="#!" id="btnMobileMenu" class="btn-mobile-menu"><span>MENU</span></a>
+<!-- btn-mobile-menu(E) -->
+
+<!-- btn-mobile-search(S) -->
+				<a href="#!" class="btn-mobile-search" id="btnOpenRight"><span>+</span></a>
+<!-- btn-mobile-search(E) -->
+
+			</div>	
+			<!-- header(E) -->
+			
+
+			<!-- sub-contents(S) -->
+			<div class="sub-contents">
+				<div class="sub-in">
+
+					<!-- sub-left(S) -->
+					<div class="sub-left" id="leftSide">
+
+						<!-- title-area(S) -->
+						<div class="title-area">
+							<!-- <img class="page-bg" src="../img/title-area.png" alt="타이틀구역"> -->
+							<ul class="page-nav">
+								<li class="btn-nav-depth">
+									<a href="#!" class="btn-nav-home"><img src="../img/btn-nav-home.png" alt="네비게이션홈버튼"></a>
+								</li>
+								<li class="btn-nav-depth">
+									<a href="#!">deptitle-02</a>
+								</li>
+								<li class="btn-nav-depth">
+									<a href="#!">depth-02</a>
+								</li>
+							</ul>
+							<h1 class="page-title">코로나19 사회적 거리두기 4단계</h1>
+
+							<ul class="pc-detail">
+								<li class="pc-day">2021.08.01</li>
+								<li class="pc-lecture">관리자</li>
+								<li class="pc-cost">KRW 280,000</li>
+								<li class="pc-view">1,619</li>
+								<li class="pc-like">1302</li>
+							</ul>
+
+						</div>
+						<!-- title-area(E) -->
+
+						<!-- contents-area(S) -->
+						<div class="contents-area">
+
+
+							<!-- 상세내용(S) -->
+							<ul class="table-ul mt25">
+								<li>
+									<div class="story">
+										<p class="txt-s">
+											기간 2020.12.11(금)16시~2020.12.17(목)24시
+											<br/>
+											코로나관련 사회적거리두기 2.5단계로 격상됨에 따라 안내드립니다.
+											자세한 내용은 첨부파일을 확인해주세요.
+											<br/>
+											감사합니다.
+										</p>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02">첨부파일</h4>
+									<div class="tit-info">
+										<a href="#!" class="ico-file-name hwp">사회적 거리두기 4단계 상향 조치내용.hwp</a>
+									</div>
+								</li>
+							</ul>
+							<!-- 상세내용(E) -->
+
+							<div class="btn-box">
+								<div class="fr">
+									<a href="#!" class="btn-type-01 purple">수정</a>
+									<a href="#!" class="btn-type-01 purple">삭제</a>
+									<a href="#!" class="btn-type-01 purple">답글</a>
+									<a href="#!" class="btn-type-01 purple">목록</a>
+								</div>
+							</div>
+
+						</div>
+						<!-- contents-area(E) -->
+
+					</div>
+					<!-- sub-left(E) -->
+
+					<!-- sub-right(S) -->
+					<div class="sub-right" id="rightSide">
+
+						<!-- reply(S) -->
+						<div class="reply-box purple">
+							<!-- 댓글쓰기(S) -->
+							<div class="reply write">
+								<div class="title-box reply-tit-01">
+									<div class="fl">
+										<h2 class="title-re">댓글</h2>
+									</div>
+									<div class="fr">
+										<a href="#!" class="btn-close-re"></a>
+									</div>
+								</div>
+								<div class="re-textarea">
+									<textarea id="reText"></textarea><label for="reText"></label>
+								</div>
+								<div class="re-secret">
+									<span class="re-tit">비밀번호</span>
+									<input type="password" id="rePw"><label for="rePw"></label>
+									<a href="#!" class="btn-type-re">등록</a>
+								</div>
+							</div>
+							<!-- 댓글쓰기(E) -->
+
+							<!-- 댓글수정하기(S) -->
+							<div class="reply list">
+								<div class="title-box reply-tit-02">
+									<div class="fl">
+										<span class="txt-time">2021-08-02</span>
+										<span class="txt-time">13시간전</span>
+									</div>
+									<div class="fr">
+										<a href="#!" class="btn-re edit">수정</a>
+										<a href="#!" class="btn-re dlt">삭제</a>
+									</div>
+								</div>
+								<div class="re-text">
+									<p class="txt-re">김쌤 강의 새로시작할때마다  항상 구매해서 듣고있습니다! 친절하게 잘 설명해주세요! </p>
+									<div class="like-box">
+										<a href="#!" class="re-like-press">0</a>
+									</div>	
+								</div>
+								
+								
+								<div class="re-edit">
+									<textarea id="editText"></textarea><label for="editText"></label>
+								</div>
+								<div class="re-secret">
+									<span class="re-tit">비밀번호</span>
+									<input type="password" id="rePw"><label for="rePw"></label>
+									<a href="#!" class="btn-type-re">수정</a>
+								</div>
+							</div>
+							<!-- 댓글수정하기(E) -->
+
+							<!-- 댓글(S) -->
+							<div class="reply list">
+								<div class="title-box">
+									<div class="fl">
+										<span class="txt-time">2021-08-02</span>
+										<span class="txt-time">13시간전</span>
+									</div>
+								</div>
+								<div class="re-text">
+									<p class="txt-re">김쌤 강의 새로시작할때마다  항상 구매해서 듣고있습니다! 친절하게 잘 설명해주세요! </p>
+									<div class="like-box">
+										<a href="#!" class="re-like-press on">0</a>
+									</div>
+								</div>
+								
+							</div>
+							<!-- 댓글(E) -->
+
+							<!-- 댓글(S) -->
+							<div class="reply list">
+								<div class="title-box">
+									<div class="fl">
+										<span class="txt-time">2021-08-02</span>
+										<span class="txt-time">13시간전</span>
+									</div>
+								</div>
+								<div class="re-text">
+									<p class="txt-re">김쌤 강의 새로시작할때마다  항상 구매해서 듣고있습니다! 친절하게 잘 설명해주세요! </p>
+									<div class="like-box">
+										<a href="#!" class="re-like-press">0</a>
+									</div>
+								</div>
+								
+							</div>
+							<!-- 댓글(E) -->
+						</div>
+						<!-- reply(E) -->
+
+					</div>
+					<!-- sub-right(E) -->
+
+				</div>
+			</div>
+			<!-- sub-contents(E) -->
+
+			
+						<!-- footer(S) -->
+			<div class="footer">
+				<div class="f_in">
+					
+					<a href="#!" class="f-logo">
+						<img src="../img/footer/footer_logo.png" alt="footerlogo" />
+					</a>
+
+					<div class="f-nav">
+						<a href="#!">개인정보처리방침</a>
+						<a href="#!">이용약관</a>
+					</div>
+
+					<p class="f-address">서울시 서초구 강남대로 27 aT센터 1302호</p>
+					<p class="f-copyright">Copyright © <span>에이콘컴퍼니</span> All rights.</p>
+				</div>
+			</div>
+			<!-- footer(E) -->
+
+		</div>
+	</div>
+	<!-- wrap(E) -->
+
+	<!-- mobile-menu(S) -->
+<div id="lnb" class="mobile-menu">
+    <!-- <div class="dim"></div> -->
+
+    <div class="mm_top">
+		<!-- before-log(S) -->
+        <!-- <div class="m_log after-log">
+            <a href="#!">로그인</a>
+            <a href="#!">회원가입</a>
+        </div> -->
+		<!-- before-log(E) -->
+
+		<!-- after-log(S) -->
+		<div class="m_log after-log">
+            <a href="#!"><span class="al-name">교육대상자</span>님 환영합니다!</a>
+        </div>
+		<!-- after-log(E) -->
+		
+        <a href="#!" id="btnCloseMobileMenu" class="m-btn-close"><img src="../img/m_lnb_close.png" alt="모바일lnb닫기버튼"></a>
+    </div>
+    
+    <ul class="lnb_box">
+      <li><a href="#!">교육관리</a>
+        <ul style="display: none;">
+          <li class="noDepth"><a href="#!">교육 조회 및 수강신청</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="#!">컨텐츠관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">게시판</a>
+        <ul>
+          <li class="noDepth"><a href="#!">공지사항</a></li>
+          <li class="noDepth"><a href="#!">농업교육 익명 게시판</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">통계현황</a>
+      <ul>
+          <li class="noDepth"><a href="#!">사용자 등록 현황</a></li>
+          <li class="noDepth"><a href="#!">교육자 실시간 현황</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 제공자 현황</a></li>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+		</ul>
+      </li>
+      <li><a href="#!">시스템관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">기간 관리</a></li>
+          <li class="noDepth"><a href="#!">사용자 관리</a></li>
+          <li class="noDepth"><a href="#!">프로그램 관리</a></li>
+          <li class="noDepth"><a href="#!">메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">기관메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">개인메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통코드 관리</a></li>
+          <li class="noDepth"><a href="#!">게시판구성 관리</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">마이페이지</a>
+        <ul>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+          <li><a href="#!">교육관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">교육이력</a></li>
+				<li class="noDepth"><a href="#!">수강후기</a></li>
+				<li class="noDepth"><a href="#!">좋아요 한 교육</a></li>
+			</ul>
+		  </li>
+          <li><a href="#!">결제관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">강의바구니</a></li>
+				<li class="noDepth"><a href="#!">구매이력</a></li>
+				<li class="noDepth"><a href="#!">나의 포인트</a></li>
+			</ul>
+		  </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<!-- mobile-menu(E) -->		
+
+
+</body>
+</html>
+
+

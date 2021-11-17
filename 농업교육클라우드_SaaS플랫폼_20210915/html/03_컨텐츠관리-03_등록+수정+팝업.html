@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTf-8">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>03_컨텐츠관리-03_등록+수정+팝업</title>
+
+<!-- CSS(S) -->
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/font.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../css/mobile.css">
+<!--CSS(E) -->
+
+<!-- SCRIPT(S) -->
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+
+<!-- SCRIPT(E) -->
+
+</head>
+
+<body> 
+	<!-- warp(S) -->
+	<div class="wrap">
+		<div class="w_in">
+			
+<!-- header(S) -->
+			<div class="header">
+
+				<a href="#!" class="h-logo">
+					<img src="../img/header/header_logo.png" alt="logo" />
+				</a>
+
+				<ul class="nav" >
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">교육관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">교육 조회 및 수강신청</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">컨텐츠관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+							<li><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">게시판</a></div>
+						<ul class="subnav">
+							<li><a href="#!">공지사항</a></li>
+							<li><a href="#!">농업교육 익명 게시판</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">통계현황</a></div>
+						<ul class="subnav">
+							<li><a href="#!">사용자 등록 현황</a></li>
+							<li><a href="#!">교육자 실시간 현황</a></li>
+							<li><a href="#!">컨텐츠 제공자 현황</a></li>
+							<li><a href="#!">대시보드</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">시스템관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">기관 관리</a></li>
+							<li><a href="#!">사용자 관리</a></li>
+							<li><a href="#!">프로그램 관리</a></li>
+							<li><a href="#!">메뉴 관리</a></li>
+							<li><a href="#!">공통메뉴 관리</a></li>
+							<li><a href="#!">기관메뉴 관리</a></li>
+							<li><a href="#!">개인메뉴 관리</a></li>
+							<li><a href="#!">공통코드 관리</a></li>
+							<li><a href="#!">게시판구성 관리</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+
+<!-- 로그인 후(S) -->				
+				<p class="welcome-user"><span class="user-name">시스템관리자</span>님 환영합니다!</p>
+
+				<div class="iconbox">
+					<a href="#!" class="icon bell"><img src="../img/header/bell.png" alt="알림"/><span class="letters">2</span></a>
+					<a href="#!" class="icon set"><img src="../img/header/set.png" alt="설정"/></a>
+					<a href="#!" class="icon logout"><img src="../img/header/logout.png" alt="로그아웃"/></a>
+				</div>
+
+				<a href="#!" class="btn_mobile-menu btn_lnb"><img src="../img/menu_icon.png" alt="모바일메뉴버튼"></a>
+<!-- 로그인 후(E) -->								
+
+<!-- 로그인 전(S) -->
+				<div class="log-before" style="display:none;">
+					<a href="#!" class="h-log">로그인</a>
+					<a href="#!" class="h-sign">회원가입</a>
+				</div>
+<!-- 로그인 전(E) -->
+
+<!-- btn-mobile-menu(S) -->
+				<a href="#!" id="btnMobileMenu" class="btn-mobile-menu"><span>MENU</span></a>
+<!-- btn-mobile-menu(E) -->
+
+<!-- btn-mobile-search(S) -->
+				<a href="#!" class="btn-mobile-search" id="btnOpenRight"><span>+</span></a>
+<!-- btn-mobile-search(E) -->
+
+			</div>	
+			<!-- header(E) -->
+			
+
+			<!-- sub-contents(S) -->
+			<div class="sub-contents">
+				<div class="sub-in">
+
+					<!-- sub-left(S) -->
+					<div class="sub-left" id="leftSide">
+
+						<!-- title-area(S) -->
+						<div class="title-area">
+							<!-- <img class="page-bg" src="../img/title-area.png" alt="타이틀구역"> -->
+							<ul class="page-nav">
+								<li class="btn-nav-depth">
+									<a href="#!" class="btn-nav-home"><img src="../img/btn-nav-home.png" alt="네비게이션홈버튼"></a>
+								</li>
+								<li class="btn-nav-depth">
+									<a href="#!">deptitle-02</a>
+								</li>
+								<li class="btn-nav-depth">
+									<a href="#!">depth-02</a>
+								</li>
+							</ul>
+							<h1 class="page-title">컨텐츠 등록 신청</h1>
+						</div>
+						<!-- title-area(E) -->
+
+						<!-- contents-area(S) -->
+						<div class="contents-area">
+							
+							<!-- title(S) -->
+							<div class="title-box">
+								<div class="fl">
+									<h2 class="title-01">교육정보</h2>
+								</div>
+							</div>
+							<!-- title(E) -->
+
+
+							<!-- 교육정보(S) -->
+							<ul class="table-ul-02 devide-2 bg-dark mt25 ">
+								<li>
+									<h4 class="title-02 point">교육 제목</h4>
+									<div class="tit-info">
+										<div class="div-ip">
+											<input type="text" id="eduName"><label for="eduName"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">교육 종류</h4>
+									<div class="tit-info">
+										<div class="div-sel">
+											<select id="eduKind">
+												<option>셀렉박스</option>
+											</select>
+											<label for="eduKind"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">교육 대상</h4>
+									<div class="tit-info">
+										<div class="div-ip w30p dib vt">
+											<input type="number" id="tu02Ip" class="tr">
+											<label for="tu02Ip"></label>
+										</div>
+										<span class="ti-txt">명</span>	
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">교육 분류</h4>
+									<div class="tit-info df">
+										<div class="div-sel">
+											<select id="eduSort01">
+												<option>셀렉박스</option>
+											</select>
+											<label for="eduSort01"></label>
+										</div>
+										<div class="div-sel">
+											<select id="eduSort02">
+												<option>셀렉박스</option>
+											</select>
+											<label for="eduSort02"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">난이도</h4>
+									<div class="tit-info df">
+										<div class="div-radio-btn">
+											<input type="radio" name="radio-btn" id="radioBtnId01" class="radio-btn-01" checked/>
+											<label for="radioBtnId01">초급</label>
+											<input type="radio" name="radio-btn" id="radioBtnId02" class="radio-btn-01">
+											<label for="radioBtnId02" class="ml10">중급</label>
+											<input type="radio" name="radio-btn" id="radioBtnId03" class="radio-btn-01">
+											<label for="radioBtnId03" class="ml10">고급 이상</label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">정원</h4>
+									<div class="tit-info">
+										<div class="div-date">
+											<input type="text" id="datePicker" class="datepicker"><label for="datePicker"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">안내표시</h4>
+									<div class="tit-info">
+										<div class="div-ip">
+											<input type="number" id="tu02Ip" placeholder="(-)없이 숫자만 입력"><label for="tu02Ip"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">교육기간</h4>
+									<div class="tit-info df">
+										<div class="div-date">
+											<input type="text" placeholder="시작일" id="datePicker" class="datepicker"><label for="datePicker"></label>
+										</div>
+										<div class="div-date">
+											<input type="text" placeholder="종료일" id="datePicker" class="datepicker"  disabled/><label for="datePicker"></label>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!-- 교육정보(E) -->
+
+
+							<!-- title(S) -->
+							<div class="title-box mt60">
+								<div class="fl">
+									<h2 class="title-01">교육내용</h2>
+								</div>
+							</div>
+							<!-- title(E) -->
+
+							<!-- 교육내용(S) -->
+							<ul class="table-ul-02 bg-dark mt25">
+								<li class="h_auto">
+									<h4 class="title-02 point">교육목표</h4>
+									<div class="tit-info">
+										<div class="div-tarea">
+											<textarea id="tArea01"></textarea><label for="tArea01"></label>
+										</div>
+									</div>
+								</li>
+								<li class="h_auto">
+									<h4 class="title-02 point">교육내용</h4>
+									<div class="tit-info">
+										<div class="div-tarea">
+											<textarea id="tArea01"></textarea><label for="tArea01"></label>
+										</div>
+									</div>
+								</li>
+								<li class="h_auto">
+									<h4 class="title-02">강의목차</h4>
+									
+									<div class="tit-info">
+										<p class="title-sub-01">* 강의 수정을 통해 영상을 업로드 할 수 있습니다.</p>
+										<div class="lecture-list-wrap">
+											<div class="lecture-list">
+												<div class="ll-left">
+													<div class="lecture-01">
+														<input type="text" id="lec01Ip" class="lec-01-input" disabled/><label for="lec01Ip"></label>
+													</div>
+													<div class="lecture-02">
+														<h4 class="lec-02-tit">1강 제목</h4>
+														<div class="lec-02-input">
+															<input type="text" id="lec02IpIn" class="lec-02-input-in" disabled/><label for="lec02IpIn"></label>
+															<div class="btn-box-lec">
+																<a href="#!" class="btn-lec write"></a>
+																<a href="#!" class="btn-lec delete"></a>
+																<a href="#!" class="btn-lec plus"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="ll-right">
+													<a href="#!" class="btn-type-list plus"></a>
+													<a href="#!" class="btn-type-list delete"></a>
+												</div>
+											</div>
+											<div class="lecture-list">
+												<div class="ll-left on">
+													<div class="lecture-01">
+														<input type="text" id="lec01Ip" class="lec-01-input"/><label for="lec01Ip"></label>
+													</div>
+													<div class="lecture-02">
+														<h4 class="lec-02-tit">1강 제목</h4>
+														<div class="lec-02-input">
+															<input type="text" id="lec02IpIn" class="lec-02-input-in"/><label for="lec02IpIn"></label>
+															<div class="btn-box-lec">
+																<a href="#!" class="btn-lec write"></a>
+																<a href="#!" class="btn-lec delete"></a>
+																<a href="#!" class="btn-lec plus"></a>
+															</div>
+														</div>
+													</div>
+													<div class="lecture-02">
+														<h4 class="lec-02-tit">2강 제목</h4>
+														<div class="lec-02-input">
+															<input type="text" id="lec02IpIn" class="lec-02-input-in"/><label for="lec02IpIn"></label>
+															<div class="btn-box-lec">
+																<a href="#!" class="btn-lec write"></a>
+																<a href="#!" class="btn-lec delete"></a>
+																<a href="#!" class="btn-lec plus"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="ll-right">
+													<a href="#!" class="btn-type-list plus"></a>
+													<a href="#!" class="btn-type-list delete"></a>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</li>
+
+								<li class="h_auto">
+									<h4 class="title-02 point">메인 이미지</h4>
+									<div class="tit-info">
+										<div class="div-devide d7_3">
+											<div class="dd-left">
+												<div class="div-ip">
+													<div class="file-plus">
+														<label for="ipFile" class="file-button">파일 첨부</label>
+														<input type="file" name="file" id="ipFile" class="ip-file" multiple="">
+														<p class="file-name">파일명.png<a href="#!" class="btn-file-delete"></a></p>
+													</div>
+												</div>
+												<div class="notice-box">
+													<p class="txt-notice">* 이미지 권장사이즈는 000*000입니다.</p>
+													<p class="txt-notice">* 최대 20MB 이하의 JPG, JPEG, PNG 파일 1장 첨부가 가능합니다.</p>
+												</div>
+											</div>
+											<div class="dd-right">
+												<div class="upload-img-box">
+													<img class="upload-img" src="../img/thumbnail.png" alt="업로드이미지" />
+													<a href="#!" class="btn-close-img"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+<!-- 버튼 추가 (S) -->							
+							<div class="btn-box tr">
+								<a href="#!" class="btn-type-03 yellow">교육파일 다운로드</a>
+							</div>
+<!-- 버튼 추가 (E) -->							
+
+							<!-- 교육내용(E) -->
+							
+
+							<!-- title(S) -->
+							<div class="title-box mt60">
+								<div class="fl">
+									<h2 class="title-01">교육설정</h2>
+								</div>
+							</div>
+							<!-- title(E) -->
+
+							<!-- 교육설정(S) -->
+							<ul class="table-ul-02 devide-2 bg-dark mt25">
+								<li>
+									<h4 class="title-02 point">교육 대상</h4>
+									<div class="tit-info">
+										<div class="div-ip w50p dib">
+											<input type="number" id="ipPrice" class="tr">
+											<label for="ipPrice"></label>
+										</div>
+										<span class="ti-txt vt">원</span>	
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">난이도</h4>
+									<div class="tit-info df">
+										<div class="div-radio-btn">
+											<input type="radio" name="radio-btn02" id="radioBtnId04" class="radio-btn-01" checked/>
+											<label for="radioBtnId04">무제한</label>
+											<input type="radio" name="radio-btn02" id="radioBtnId05" class="radio-btn-01">
+											<label for="radioBtnId05" class="ml10">제한</label>
+										</div>
+										<div class="div-ip w20p dib">
+											<input type="text" id="eduMonth" class="tr"><label for="eduMonth"></label>
+										</div>
+										<span class="ti-txt ml0">개월</span>
+									</div>
+								</li>
+							</ul>
+							<!-- 교육설정(E) -->
+							
+
+							<div class="btn-box">
+								<div class="fr">
+									<a href="#!" class="btn-type-01">초기화</a>
+									<a href="#!" class="btn-type-01">등록</a>
+								</div>
+							</div>
+							
+
+
+
+						</div>
+						<!-- contents-area(E) -->
+
+					</div>
+					<!-- sub-left(E) -->
+
+					<!-- sub-right(S) -->
+					<div class="sub-right" id="rightSide">
+
+
+					</div>
+					<!-- sub-right(E) -->
+
+				</div>
+			</div>
+			<!-- sub-contents(E) -->
+
+			
+						<!-- footer(S) -->
+			<div class="footer">
+				<div class="f_in">
+					
+					<a href="#!" class="f-logo">
+						<img src="../img/footer/footer_logo.png" alt="footerlogo" />
+					</a>
+
+					<div class="f-nav">
+						<a href="#!">개인정보처리방침</a>
+						<a href="#!">이용약관</a>
+					</div>
+
+					<p class="f-address">서울시 서초구 강남대로 27 aT센터 1302호</p>
+					<p class="f-copyright">Copyright © <span>에이콘컴퍼니</span> All rights.</p>
+				</div>
+			</div>
+			<!-- footer(E) -->
+
+
+
+
+			<!-- 팝업(S) -->
+			<div class="popup-02" style="display:none">
+				<div class="popup-wrap">
+					<a href="#!" class="btn-popup-close-02"></a>
+					<div class="popup-page">
+						
+						<div class="title-box">
+							<div class="fl">
+								<h2 class="title-01">영상업로드</h2>
+							</div>
+						</div>
+						<div class="pp-wrap scroll-type mt25">
+							<ul class="table-ul-02 bg-dark">
+								<li>
+									<h4 class="title-02 point">제목</h4>
+									<div class="tit-info">
+										<div class="div-ip">
+											<input type="text" id="tu02Ip"><label for="tu02Ip"></label>
+										</div>
+									</div>
+								</li>
+								<li class="h_auto">
+									<h4 class="title-02 point">영상 업로드</h4>
+									<div class="tit-info">
+										<div class="div-devide d1_9">
+											<div class="dd-left">
+												<div class="dd-l-tit">
+													<input type="radio" name="choice01" id="choice11" class="choice02"><label for="choice11" class="radio-agree"><span></span>업로드</label>
+												</div>
+											</div>
+											<div class="dd-right">
+												<div class="div-ip">
+													<div class="file-plus">
+														<label for="ipFile" class="file-button">파일 첨부</label>
+														<input type="file" name="file" id="ipFile" class="ip-file" multiple="">
+														<p class="file-name">파일명.png<a href="#!" class="btn-file-delete"></a></p>
+													</div>
+												</div>
+												<p class="txt-notice mt5">* 영상파일 직접 등록시에는 최대 000MB까지 업로드가 가능합니다.</p>
+												<p class="txt-notice">* 최대 500MB 이하의 mpg, mp4, mv4파일 첨부가 가능합니다.</p>
+											</div>
+										</div>
+										<div class="div-devide d1_9 mt10">
+											<div class="dd-left">
+												<div class="dd-l-tit">
+													<input type="radio" name="choice01" id="choice22" class="choice02"><label for="choice22" class="radio-agree"><span></span>URL링크</label>
+												</div>
+											</div>
+											<div class="dd-right">
+												<div class="div-ip">
+													<input type="text" id="tu02Ip"><label for="tu02Ip"></label>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</li>
+								<li>
+									<h4 class="title-02 point">무료공개 여부</h4>
+									<div class="tit-info">	
+										<div class="div-etc">
+											<input type="radio" name="choice" id="choice01" class="choice02"><label for="choice01" class="radio-agree"><span></span>무료</label>
+											<input type="radio" name="choice" id="choice02" class="choice02"><label for="choice02" class="radio-agree ml10"><span></span>부분무료</label>
+											<input type="radio" name="choice" id="choice03" class="choice02"><label for="choice03" class="radio-agree ml10"><span></span>유료</label>
+										</div>
+									</div>
+								</li>
+								<li class="h_auto">
+									<h4 class="title-02">교육자료 업로드</h4>
+									<div class="tit-info">
+										<div class="div-ip">
+											<div class="file-plus">
+												<label for="ipFile" class="file-button">파일 첨부</label>
+												<input type="file" name="file" id="ipFile" class="ip-file" multiple="">
+												<p class="file-name">파일명.png<a href="#!" class="btn-file-delete"></a></p>
+												<p class="file-name">파일명.png<a href="#!" class="btn-file-delete"></a></p>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="btn-box mt30">
+							<div class="fr">
+								<a href="#!" class="btn-type-01">취소</a>
+								<a href="#!" class="btn-type-01">등록</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 팝업(E) -->
+		</div>
+	</div>
+	<!-- wrap(E) -->
+
+	<!-- mobile-menu(S) -->
+<div id="lnb" class="mobile-menu">
+    <!-- <div class="dim"></div> -->
+
+    <div class="mm_top">
+		<!-- before-log(S) -->
+        <!-- <div class="m_log after-log">
+            <a href="#!">로그인</a>
+            <a href="#!">회원가입</a>
+        </div> -->
+		<!-- before-log(E) -->
+
+		<!-- after-log(S) -->
+		<div class="m_log after-log">
+            <a href="#!"><span class="al-name">교육대상자</span>님 환영합니다!</a>
+        </div>
+		<!-- after-log(E) -->
+		
+        <a href="#!" id="btnCloseMobileMenu" class="m-btn-close"><img src="../img/m_lnb_close.png" alt="모바일lnb닫기버튼"></a>
+    </div>
+    
+    <ul class="lnb_box">
+      <li><a href="#!">교육관리</a>
+        <ul style="display: none;">
+          <li class="noDepth"><a href="#!">교육 조회 및 수강신청</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="#!">컨텐츠관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">게시판</a>
+        <ul>
+          <li class="noDepth"><a href="#!">공지사항</a></li>
+          <li class="noDepth"><a href="#!">농업교육 익명 게시판</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">통계현황</a>
+      <ul>
+          <li class="noDepth"><a href="#!">사용자 등록 현황</a></li>
+          <li class="noDepth"><a href="#!">교육자 실시간 현황</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 제공자 현황</a></li>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+		</ul>
+      </li>
+      <li><a href="#!">시스템관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">기간 관리</a></li>
+          <li class="noDepth"><a href="#!">사용자 관리</a></li>
+          <li class="noDepth"><a href="#!">프로그램 관리</a></li>
+          <li class="noDepth"><a href="#!">메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">기관메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">개인메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통코드 관리</a></li>
+          <li class="noDepth"><a href="#!">게시판구성 관리</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">마이페이지</a>
+        <ul>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+          <li><a href="#!">교육관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">교육이력</a></li>
+				<li class="noDepth"><a href="#!">수강후기</a></li>
+				<li class="noDepth"><a href="#!">좋아요 한 교육</a></li>
+			</ul>
+		  </li>
+          <li><a href="#!">결제관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">강의바구니</a></li>
+				<li class="noDepth"><a href="#!">구매이력</a></li>
+				<li class="noDepth"><a href="#!">나의 포인트</a></li>
+			</ul>
+		  </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<!-- mobile-menu(E) -->		
+
+
+</body>
+</html>
+
+

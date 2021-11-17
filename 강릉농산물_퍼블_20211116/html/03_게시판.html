@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>게시판</title>
+
+<!-- CSS(S) -->
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/font.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+<!-- CSS(E) -->
+
+<!-- SCRIPT(S) -->
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../js/swiper.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<!-- SCRIPT(E) -->
+
+</head>
+
+<body> 
+	<!-- warp(S) -->
+	<div class="wrap">
+		<div class="w_in">
+		<!-- header(S) -->
+		<div class="header">
+			<div class="h_in">
+				<div class="hi_top">
+					<a href="#!" class="main_logo"><img src="../img/h_logo.png" alt="헤더로고"></a>
+					<div class="h_search_box">
+						<div class="signin">
+							<a href="#!">로그인</a>
+							<a href="#!">회원가입</a>
+						</div>
+					</div>
+					<a href="#!" class="btn_mobile_menu btn_lnb"><img src="../img/menu_icon.png" alt="모바일메뉴버튼"></a>
+				</div>
+				<div class="hi_bottom">
+					<ul class="nav">
+						<div class="nav_bg"></div>  
+						<li class="navi_set">  
+							<div class="topnav"><a href="#!">회사소개</a></div>
+							<ul class="subnav">  
+								<li><a href="../html/03_회사소개_01_인사말.html" class="linked" target="_blank">인사말</a></li>  
+								<li><a href="../html/03_회사소개_02_회사개요.html" class="linked" target="_blank">회사개요</a></li> 
+								<li><a href="../html/03_회사소개_03_연혁.html"  class="linked" target="_blank">연혁</a></li>  
+								<li><a href="../html/03_회사소개_04_사업실적.html"  class="linked" target="_blank">사업실적</a></li>  
+								<li><a href="../html/03_회사소개_05_CI소개.html"  class="linked" target="_blank">CI소개</a></li>  
+								<li><a href="../html/03_회사소개_06_조직도.html"  class="linked" target="_blank">조직도</a></li>  
+								<li><a href="../html/03_회사소개_07_약도.html"  class="linked" target="_blank">약도</a></li>  
+								<li><a href="../html/03_회사소개_08_경영공시.html"  class="linked" target="_blank">경영공시</a></li>  
+							</ul>  
+						</li>  
+
+						<li class="navi_set">  
+							<div class="topnav"><a href="#!">유통종사자</a></div>
+							<ul class="subnav">  
+								<li><a href="../html/02_유통종사자_01_경매사.html" class="linked" target="_blank">경매사</a></li>  
+								<li><a href="../html/02_유통종사자_02_중도매인.html" class="linked" target="_blank">중도매인</a></li> 
+								<li><a href="../html/02_유통종사자_03_매매참가인.html" class="linked" target="_blank">매매참가인</a></li>  
+							</ul>  
+						</li> 
+						
+						<li class="navi_set">  
+							<div class="topnav"><a href="#!">실시간 시세정보</a></div>
+							<ul class="subnav">  
+								<li><a href="../html/05_실시간시세정보_01_실시간경매정보_01_실시간경매정보.html" class="linked" target="_blank">실시간 경매정보</a></li>  
+								<li><a href="../html/05_실시간시세정보_01_실시간경매정보_02_전자경매.html" class="linked" target="_blank">전자경매</a></li>  
+								<li><a href="#!">시세정보 조회</a></li> 
+								<li><a href="#!">유통정보</a></li> 
+							</ul>  
+						</li> 
+
+						<li class="navi_set">  
+							<div class="topnav"><a href="#!">출하주 정산정보</a></div>
+							<ul class="subnav">  
+								<li><a href="#!">판매내역</a></li>  
+								<li><a href="#!">미지급내역</a></li> 
+								<li><a href="#!">실적집계</a></li>  
+							</ul>  
+						</li>
+						<li class="navi_set">  
+							<div class="topnav"><a href="#!">중도매인 거래정보</a></div>
+							<ul class="subnav">  
+								<li><a href="#!">일자별 낙찰명세서</a></li>  
+								<li><a href="#!">기간별 거래원장</a></li> 
+							</ul>  
+						</li>
+						<li class="navi_set">  
+							<div class="topnav"><a href="#!">농산물 안전성 검사</a></div>
+							<ul class="subnav">  
+								<li><a href="#!">안정성 검사란?</a></li>  
+								<li><a href="#!">검사체계</a></li> 
+								<li><a href="#!">감사결과</a></li>  
+							</ul>  
+						</li>
+						<li class="navi_set">  
+							<div class="topnav"><a href="#!">고객마당</a></div>
+							<ul class="subnav">  
+								<li><a href="#!">공지사항</a></li>  
+								<li><a href="../html/03_게시판.html" class="linked" target="_blank">게시판</a></li> 
+								<li><a href="#!">자료실</a></li>  
+							</ul>  
+						</li>
+						<li><a href="#!" class="btn_global"><img src="../img/menu_icon.png" alt="글로벌메뉴"></a>	</li>
+					</ul>
+					
+				</div>
+				
+			</div>
+		</div>
+		<!-- header(E) -->
+
+			<!-- sub-contents(S) -->
+			<div class="sub_contents common">
+			<!-- sub상단(S) -->
+			<div class="sub_top">
+				<h2 class="sub_title">공지사항</h2>
+
+				<!-- 네비게이션(S) -->
+				<div class="nav_box">
+					<div class="nav_in">
+						<a href="#!" class="btn_home"><img src="../img/btn_home.png" alt="네비게이션홈버튼"></a>
+						<ul class="nav_depth_box">
+							<li class="btn_nav_depth_01">
+								<a href="#!">depth-01<span class="nav_arrow"><img src="../img/nav_arrow.png" alt="네비화살표"></span></a>
+								<ul class="nav_depth_box_02">
+									<li class="btn_nav_depth_02"><a href="#!">depth_01-01</a></li>
+									<li class="btn_nav_depth_02"><a href="#!">depth_01-02</a></li>
+									<li class="btn_nav_depth_02"><a href="#!">depth_01-03</a></li>
+								</ul>
+							</li>
+							<li class="btn_nav_depth_01">
+								<a href="#!">depth-02<span class="nav_arrow"><img src="../img/nav_arrow.png" alt="네비화살표"></span></a>
+								<ul class="nav_depth_box_02">
+									<li class="btn_nav_depth_02"><a href="#!">depth_02-01</a></li>
+									<li class="btn_nav_depth_02"><a href="#!">depth_02-02</a></li>
+									<li class="btn_nav_depth_02"><a href="#!">depth_02-03</a></li>
+									<li class="btn_nav_depth_02"><a href="#!">depth_02-04</a></li>
+									<li class="btn_nav_depth_02"><a href="#!">depth_02-05</a></li>
+								</ul>
+							</li>
+							<li class="btn_nav_depth_01">
+								<a href="#!">depth-03<span class="nav_arrow"><img src="../img/nav_arrow.png" alt="네비화살표"></span></a>
+								<ul class="nav_depth_box_02">
+									<li class="btn_nav_depth_02"><a href="#!">depth_03-01</a></li>
+									<li class="btn_nav_depth_02"><a href="#!">depth_03-02</a></li>
+									<li class="btn_nav_depth_02"><a href="#!">depth_03-03</a></li>
+									<li class="btn_nav_depth_02"><a href="#!">depth_03-04</a></li>
+									<li class="btn_nav_depth_02"><a href="#!">depth_03-05</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 네비게이션(E) -->
+			</div>
+			<!-- sub상단(E) -->
+				<div class="sub_in">
+
+<!-- 레프트메뉴추가(S) -->					
+				<div class="left-sub-menu">
+					<ul class="ls-wrap">
+						<li><a href="#!" class="ls-depth-01">관리자 정보변경</a></li>
+						<li><a href="#!" class="ls-depth-01">부산물 퇴비지원 신청</a></li>
+						<li><a href="#!" class="ls-depth-01">시황정보<br/>공지사항 관리</a></li>
+						<li><a href="#!" class="ls-depth-01">안전성검사 관리</a></li>
+						<li><a href="#!" class="ls-depth-01">게시판 관리</a></li>
+						<li><a href="#!" class="ls-depth-01 on">자료실 관리</a></li>
+						<li><a href="#!" class="ls-depth-01">회원관리</a></li>
+						<li><a href="#!" class="ls-depth-01">정산메세지 전송</a></li>
+						<li><a href="#!" class="ls-depth-01">공지메세지 전송</a></li>
+						<li><a href="#!" class="ls-depth-01">단건 전송</a></li>
+						<li><a href="#!" class="ls-depth-01">전송결과 확인</a></li>
+						<li><a href="#!" class="ls-depth-01">출하자 신고 시스템</a></li>
+						<li><a href="#!" class="ls-depth-01 log-out">로그아웃</a></li>
+					</ul>
+				</div>
+<!-- 레프트메뉴추가(E) -->									
+					
+					<!-- 검색조건창(S) -->
+					<div class="search_box">
+						<select id="searchSel">
+							<option>제목</option>
+							<option>내용</option>
+						</select>
+						<label for="searchSel"></label>
+						<input type="text" id="searchInp" placeholder="검색어를 입력하세요"><label for="searchInp"></label>
+						<a href="#!" class="btn_search">검색</a>
+					</div>
+					<!-- 검색조건창(E) -->
+
+					<!-- 테이블(S) -->
+					<div class="table_type_trans">
+						<ul class="tt_head">
+							<li class="col_num">번호</li>
+							<li class="col_title">제목</li>
+							<li class="col_file">파일</li>
+							<li class="col_views">조회수</li>
+							<li class="col_writer">작성자</li>
+							<li class="col_day">작성일</li>
+						</ul>
+						<ul class="tt_body">
+							<li class="col_num"><p class="num">32</p></li>
+							<li class="col_title"><a href="#!" class="txt_01">강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.</a></li>
+							<li class="col_file"><a href="#!" class="ico_down doc"></a></li>
+							<li class="col_views"><p class="views"><span>조회수</span>250</p></li>
+							<li class="col_writer"><p class="writer">관리자</p></li>
+							<li class="col_day"><p class="upload_day">2021.05.29</p></li>
+						</ul>
+						<ul class="tt_body">
+							<li class="col_num"><p class="num">32</p></li>
+							<li class="col_title"><a href="#!" class="txt_01 reple">강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.</a></li>
+							<li class="col_file"><a href="#!" class="ico_down pdf"></a></li>
+							<li class="col_views"><p class="views"><span>조회수</span>250</p></li>
+							<li class="col_writer"><p class="writer">관리자</p></li>
+							<li class="col_day"><p class="upload_day">2021.05.29</p></li>
+						</ul>
+						<ul class="tt_body">
+							<li class="col_num"><p class="num">32</p></li>
+							<li class="col_title"><a href="#!" class="txt_01 reple">강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.</a></li>
+							<li class="col_file"><a href="#!" class="ico_down hwp"></a></li>
+							<li class="col_views"><p class="views"><span>조회수</span>250</p></li>
+							<li class="col_writer"><p class="writer">관리자</p></li>
+							<li class="col_day"><p class="upload_day">2021.05.29</p></li>
+						</ul>
+						<ul class="tt_body">
+							<li class="col_num"><p class="num">32</p></li>
+							<li class="col_title"><a href="#!" class="txt_01 reple">강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.</a></li>
+							<li class="col_file"><a href="#!" class="ico_down xls"></a></li>
+							<li class="col_views"><p class="views"><span>조회수</span>250</p></li>
+							<li class="col_writer"><p class="writer">관리자</p></li>
+							<li class="col_day"><p class="upload_day">2021.05.29</p></li>
+						</ul>
+						<ul class="tt_body">
+							<li class="col_num"><p class="num">32</p></li>
+							<li class="col_title"><a href="#!" class="txt_01 reple">강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.</a></li>
+							<li class="col_file"><a href="#!" class="ico_down ppt"></a></li>
+							<li class="col_views"><p class="views"><span>조회수</span>250</p></li>
+							<li class="col_writer"><p class="writer">관리자</p></li>
+							<li class="col_day"><p class="upload_day">2021.05.29</p></li>
+						</ul>
+						<ul class="tt_body">
+							<li class="col_num"><p class="num">32</p></li>
+							<li class="col_title"><a href="#!" class="txt_01 reple">강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.</a></li>
+							<li class="col_file"><a href="#!" class="ico_down gif"></a></li>
+							<li class="col_views"><p class="views"><span>조회수</span>250</p></li>
+							<li class="col_writer"><p class="writer">관리자</p></li>
+							<li class="col_day"><p class="upload_day">2021.05.29</p></li>
+						</ul>
+						<ul class="tt_body">
+							<li class="col_num"><p class="num">32</p></li>
+							<li class="col_title"><a href="#!" class="txt_01 reple">강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.</a></li>
+							<li class="col_file"><a href="#!" class="ico_down png"></a></li>
+							<li class="col_views"><p class="views"><span>조회수</span>250</p></li>
+							<li class="col_writer"><p class="writer">관리자</p></li>
+							<li class="col_day"><p class="upload_day">2021.05.29</p></li>
+						</ul>
+						<ul class="tt_body">
+							<li class="col_num"><p class="num">32</p></li>
+							<li class="col_title"><a href="#!" class="txt_01 reple">강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.</a></li>
+							<li class="col_file"><a href="#!" class="ico_down jpg"></a></li>
+							<li class="col_views"><p class="views"><span>조회수</span>250</p></li>
+							<li class="col_writer"><p class="writer">관리자</p></li>
+							<li class="col_day"><p class="upload_day">2021.05.29</p></li>
+						</ul>
+						<ul class="tt_body">
+							<li class="col_num"><p class="num">32</p></li>
+							<li class="col_title"><a href="#!" class="txt_01 reple">강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.</a></li>
+							<li class="col_file"><a href="#!" class="ico_down etc"></a></li>
+							<li class="col_views"><p class="views"><span>조회수</span>250</p></li>
+							<li class="col_writer"><p class="writer">관리자</p></li>
+							<li class="col_day"><p class="upload_day">2021.05.29</p></li>
+						</ul>
+						<ul class="tt_body">
+							<li class="col_num"><p class="num">32</p></li>
+							<li class="col_title"><a href="#!" class="txt_01 reple">강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.강릉농산물도매시장 홈페이지를 새롭게 오픈하였습니다.</a></li>
+							<li class="col_file"><a href="#!" class="ico_down doc"></a></li>
+							<li class="col_views"><p class="views"><span>조회수</span>250</p></li>
+							<li class="col_writer"><p class="writer">관리자</p></li>
+							<li class="col_day"><p class="upload_day">2021.05.29</p></li>
+						</ul>
+					</div>
+					<!-- 테이블(E) -->
+
+
+				<!-- 버튼(S) -->
+				<div class="btn_box">
+					<div class="fr">
+						<a href="#!" class="btn_type_01 gray write">글쓰기</a>
+					</div>
+				</div>
+				<!-- 버튼(E) -->
+
+				<!-- 페이지박스(S) -->
+				<div class="paging_box">
+					<a href="#!" class="btn_page_prev">이전</a>
+					<a href="#!" class="btn_page on">1</a>
+					<a href="#!" class="btn_page">2</a>
+					<a href="#!" class="btn_page">3</a>
+					<a href="#!" class="btn_page">4</a>
+					<a href="#!" class="btn_page">5</a>
+					<a href="#!" class="btn_page_next">다음</a>
+				</div>
+				<!-- 페이지박스(E) -->				
+
+				</div>
+			</div>
+			<!-- sub-contents(E) -->
+
+		<!-- footer(S) -->
+		<div class="footer"> 
+			<div class="f_in">
+				<a href="#!" class="f_logo"><img src="../img/f_logo.png" alt="푸터로고"></a>
+				<ul class="address">
+					<li><span>주소</span> 강원도 강릉시 유산로 60</li>
+					<li><span>대표전화</span> 033-644-4654</li>
+					<li><span>팩스</span> 033-646-4860</li>
+				</ul>
+				<span class="copy">copyrightⓒ(주)강릉농산물도매시장 all right reserverd.</span>
+			</div>
+
+		</div>
+		<!-- footer(E) -->
+
+		
+		<!-- 모바일메뉴(S) -->
+		<div id="lnb" class="mobile_menu">
+			<!-- <div class="dim"></div> -->
+
+			<div class="mm_top">
+				<div class="m_log">
+					<a href="#!">로그인</a>
+					<a href="#!">회원가입</a>
+				</div>
+				<a href="#!" class="m_btn_close"><img src="../img/m_lnb_close.png" alt="모바일lnb닫기버튼"></a>
+			</div>
+			
+			<ul class="lnb_box">
+			  <li><a href="#none">회사소개</a>
+				<ul>
+				  <li><a href="../html/03_회사소개_01_인사말.html" class="linked" target="_blank">· 인사말</a></li>
+				  <li><a href="../html/03_회사소개_02_회사개요.html" class="linked" target="_blank">· 회사개요</a></li>
+				  <li><a href="../html/03_회사소개_03_연혁.html" class="linked" target="_blank">· 연혁</a></li>
+				  <li><a href="../html/03_회사소개_04_사업실적.html" class="linked" target="_blank">· 사업실적</a></li>
+				  <li><a href="../html/03_회사소개_05_CI소개.html" class="linked" target="_blank">· CI소개</a></li>
+				  <li><a href="../html/03_회사소개_06_조직도.html" class="linked" target="_blank">· 조직도</a></li>
+				  <li><a href="../html/03_회사소개_07_약도.html" class="linked" target="_blank">· 약도</a></li>
+				  <li><a href="../html/03_회사소개_08_경영공시.html" class="linked" target="_blank">· 경영공시</a></li>
+				</ul>
+			  </li>
+			  
+			  <li><a href="#none">유통종사자</a>
+				<ul>
+				  <li><a href="../html/02_유통종사자_01_경매사.html" class="linked" target="_blank">· 경매사</a></li>
+				  <li><a href="../html/02_유통종사자_02_중도매인.html" class="linked" target="_blank">· 중도매인</a></li>
+				  <li><a href="../html/02_유통종사자_03_매매참가인.html" class="linked" target="_blank">· 매매참가인</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#none">실시간 시세정보</a>
+				<ul>
+				  <li><a href="../html/05_실시간시세정보_01_실시간경매정보_01_실시간경매정보.html" class="linked" target="_blank">· 실시간 경매정보</a></li>
+				  <li><a href="../html/05_실시간시세정보_01_실시간경매정보_02_전자경매.html" class="linked" target="_blank">· 전자경매</a></li>
+				  <li><a href="#none">· 시세정보 조회</a></li>
+				  <li><a href="#none">· 유통정보</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#none">출하주 정산정보</a>
+				<ul>
+				  <li><a href="#none">· 판매내역</a></li>
+				  <li><a href="#none">· 미지급내역</a></li>
+				  <li><a href="#none">· 실적집계</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#none">중도매인 거래정보</a>
+				<ul>
+				  <li><a href="#none">· 일자별 낙찰명세서</a></li>
+				  <li><a href="#none">· 기간별 거래원장</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#none">농산물 안전성 검사</a>
+				<ul>
+				  <li><a href="#none">· 안성성 검사란?</a></li>
+				  <li><a href="#none">· 검사체계</a></li>
+				  <li><a href="#none">· 감사결과</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#none">고객마당</a>
+				<ul>
+				  <li><a href="#none">· 공지사항</a></li>
+				  <li><a href="../html/03_게시판.html" class="linked" target="_blank">· 게시판</a></li>
+				  <li><a href="#none">· 자료실</a></li>
+				</ul>
+			  </li>
+			</ul>
+		  </div>
+		  <!-- 모바일메뉴(E) -->
+		</div>
+	</div>
+	<!-- wrap(E) -->		
+
+
+</body>
+</html>
+
+

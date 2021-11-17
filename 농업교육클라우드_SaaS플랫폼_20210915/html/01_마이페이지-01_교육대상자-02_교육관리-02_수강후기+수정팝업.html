@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTf-8">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>01_마이페이지-01_교육대상자-02_교육관리-02_수강후기+수정팝업</title>
+
+<!-- CSS(S) -->
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/font.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../css/mobile.css">
+<!--CSS(E) -->
+
+<!-- SCRIPT(S) -->
+
+<script type="text/javascript" src="../js/script.js"></script>
+
+
+<!-- SCRIPT(E) -->
+
+</head>
+
+<body> 
+	<!-- warp(S) -->
+	<div class="wrap">
+		<div class="w_in">
+			
+<!-- header(S) -->
+			<div class="header">
+
+				<a href="#!" class="h-logo">
+					<img src="../img/header/header_logo.png" alt="logo" />
+				</a>
+
+				<ul class="nav" >
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">교육관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">교육 조회 및 수강신청</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">컨텐츠관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+							<li><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">게시판</a></div>
+						<ul class="subnav">
+							<li><a href="#!">공지사항</a></li>
+							<li><a href="#!">농업교육 익명 게시판</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">통계현황</a></div>
+						<ul class="subnav">
+							<li><a href="#!">사용자 등록 현황</a></li>
+							<li><a href="#!">교육자 실시간 현황</a></li>
+							<li><a href="#!">컨텐츠 제공자 현황</a></li>
+							<li><a href="#!">대시보드</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">시스템관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">기관 관리</a></li>
+							<li><a href="#!">사용자 관리</a></li>
+							<li><a href="#!">프로그램 관리</a></li>
+							<li><a href="#!">메뉴 관리</a></li>
+							<li><a href="#!">공통메뉴 관리</a></li>
+							<li><a href="#!">기관메뉴 관리</a></li>
+							<li><a href="#!">개인메뉴 관리</a></li>
+							<li><a href="#!">공통코드 관리</a></li>
+							<li><a href="#!">게시판구성 관리</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+
+<!-- 로그인 후(S) -->				
+				<p class="welcome-user"><span class="user-name">시스템관리자</span>님 환영합니다!</p>
+
+				<div class="iconbox">
+					<a href="#!" class="icon bell"><img src="../img/header/bell.png" alt="알림"/><span class="letters">2</span></a>
+					<a href="#!" class="icon set"><img src="../img/header/set.png" alt="설정"/></a>
+					<a href="#!" class="icon logout"><img src="../img/header/logout.png" alt="로그아웃"/></a>
+				</div>
+
+				<a href="#!" class="btn_mobile-menu btn_lnb"><img src="../img/menu_icon.png" alt="모바일메뉴버튼"></a>
+<!-- 로그인 후(E) -->								
+
+<!-- 로그인 전(S) -->
+				<div class="log-before" style="display:none;">
+					<a href="#!" class="h-log">로그인</a>
+					<a href="#!" class="h-sign">회원가입</a>
+				</div>
+<!-- 로그인 전(E) -->
+
+<!-- btn-mobile-menu(S) -->
+				<a href="#!" id="btnMobileMenu" class="btn-mobile-menu"><span>MENU</span></a>
+<!-- btn-mobile-menu(E) -->
+
+<!-- btn-mobile-search(S) -->
+				<a href="#!" class="btn-mobile-search" id="btnOpenRight"><span>+</span></a>
+<!-- btn-mobile-search(E) -->
+
+			</div>	
+			<!-- header(E) -->
+			
+
+			<!-- sub-contents(S) -->
+			<div class="sub-contents">
+				<div class="sub-in">
+
+					<!-- left-menu(S) -->
+					<div class="left-menu" id="leftMenu">
+						<ul class="lb-products-01 blue">
+							<li class="lb-item-depth-01"><a href="#!">대시보드</a></li>
+						</ul>
+						<ul class="lb-products-01 green on">
+							<li class="lb-item-depth-01"><a href="#!">교육관리</a>
+								<ul class="lb-products-02">
+									<li class="lb-item-depth-02"><a href="#!">교육이력</a></li>
+									<li class="lb-item-depth-02 on"><a href="#!">수강후기</a></li>
+									<li class="lb-item-depth-02"><a href="#!">좋아요 한 교육</a></li>
+								</ul>
+							</li>	
+						</ul>
+						<ul class="lb-products-01 yellow">
+							<li class="lb-item-depth-01"><a href="#!">결제관리</a>
+								<ul class="lb-products-02">
+									<li class="lb-item-depth-02"><a href="#!">강의바구니</a></li>
+									<li class="lb-item-depth-02"><a href="#!">구매이력</a></li>
+									<li class="lb-item-depth-02"><a href="#!">나의 포인트</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- left-menu(E) -->
+
+
+					<!-- sub-left(S) -->
+					<div class="sub-left menu" id="leftSide">
+							
+
+						<div class="contents-area mt100">
+						
+							<!-- 순서(S) -->
+							<div class="title-box sort">
+								<div class="fl">
+									<a href="#!" class="btn-sort on">최근 수강 순</a>
+									<a href="#!" class="btn-sort">높은 평점 순</a>
+									<a href="#!" class="btn-sort">낮은 평점 순</a>
+								</div>
+							</div>
+							<!-- 순서(E) -->
+
+							<!-- 수강후기(S) -->
+							<ul class="cti-preview-products mt20">
+								<li class="cti-preview-item">
+									<div class="class-info ci-01">
+										<div class="fl">
+											<div class="ci-img">
+												<img src="../img/pcb-img-01.png" alt="수강이미지">
+											</div>
+											<div class="ci-name">
+												<h4 class="cin-title-01">2021 농업교육농업교육 초급</h4>
+												<div class="cin-detail">
+													<span class="ci-txt">홍길동</span>
+													<span class="ci-txt">총 10강</span>
+													<span class="ci-txt finish">완료(100%)</span>
+												</div>
+											</div>
+										</div>
+										<div class="fr">
+											<a href="#!" class="btn-ci write"></a>
+											<a href="#!" class="btn-ci delete"></a>
+										</div>
+									</div>
+									<div class="class-info ci-02">
+										<p class="ci-02-01 day">2021.10.01</p>
+										<div class="ci-02-score">
+											<span class="ci-star on"></span>
+											<span class="ci-star on"></span>
+											<span class="ci-star on"></span>
+											<span class="ci-star on"></span>
+											<span class="ci-star"></span>
+											<span class="ci-score">4.0</span>
+										</div>
+										<p class="ci-02-01 like"><span></span>0</p>
+									</div>
+									<div class="ci-box txt">
+										<p>
+											강사님이 참 친절하시고 아직 웹개발은 지식이 별로 없어서 뭘 어떻게 해야 할지 참 
+											막막했는데 덕분에 방향을 잡은 것 같습니다  제 개인적인 생각으로는 이 강의를 토
+											로 개발을 완전 처음 입문하시는 분이 이 정도로 코드를 구현하는 건 매우 힘든
+											이 정도로 코드를 구현하는 건 매우 힘든이 정도로 코드를 구현하는 건 매우 힘든
+											이 정도로 코드를 구현하는 건 매우 힘든이 정도로 코드를 구현하는 건 매우 힘든
+										</p>
+									</div>
+									
+								</li>
+
+								<li class="cti-preview-item">
+									<div class="class-info ci-01">
+										<div class="fl">
+											<div class="ci-img">
+												<img src="../img/pcb-img-01.png" alt="수강이미지">
+											</div>
+											<div class="ci-name">
+												<h4 class="cin-title-01">2021 농업교육 초급</h4>
+												<div class="cin-detail">
+													<span class="ci-txt">홍길동</span>
+													<span class="ci-txt">총 10강</span>
+													<span class="ci-txt ing">진행중(70%)</span>
+												</div>
+											</div>
+										</div>
+										<div class="fr">
+											<a href="#!" class="btn-ci write"></a>
+											<a href="#!" class="btn-ci delete"></a>
+										</div>
+									</div>
+									<div class="class-info ci-02">
+										<p class="ci-02-01 day">2021.10.01</p>
+										<div class="ci-02-score">
+											<span class="ci-star on"></span>
+											<span class="ci-star on"></span>
+											<span class="ci-star on"></span>
+											<span class="ci-star on"></span>
+											<span class="ci-star"></span>
+											<span class="ci-score">4.0</span>
+										</div>
+										<p class="ci-02-01 like"><span></span>0</p>
+									</div>
+									<div class="ci-img-box">
+										<img src="../img/ci-class-img.png" alt="수강캡쳐이미지">
+									</div>
+									<div class="ci-box txt">
+										<p>
+											강사님이 참 친절하시고 아직 웹개발은 지식이 별로 없어서 뭘 어떻게 해야 할지 참 
+											막막했는데 덕분에 방향을 잡은 것 같습니다  제 개인적인 생각으로는 이 강의를 토
+											로 개발을 완전 처음 입문하시는 분이 이 정도로 코드를 구현하는 건 매우 힘든
+											이 정도로 코드를 구현하는 건 매우 힘든이 정도로 코드를 구현하는 건 매우 힘든
+											이 정도로 코드를 구현하는 건 매우 힘든이 정도로 코드를 구현하는 건 매우 힘든
+										</p>
+									</div>
+									
+								</li>
+
+
+							</ul>
+							<!-- 수강후기(E) -->
+						</div>
+
+						
+
+					</div>
+					<!-- sub-left(E) -->
+
+					<!-- sub-right(S) -->
+					<div class="sub-right" id="rightSide">
+
+
+					</div>
+					<!-- sub-right(E) -->
+
+				</div>
+			</div>
+			<!-- sub-contents(E) -->
+
+			
+						<!-- footer(S) -->
+			<div class="footer">
+				<div class="f_in">
+					
+					<a href="#!" class="f-logo">
+						<img src="../img/footer/footer_logo.png" alt="footerlogo" />
+					</a>
+
+					<div class="f-nav">
+						<a href="#!">개인정보처리방침</a>
+						<a href="#!">이용약관</a>
+					</div>
+
+					<p class="f-address">서울시 서초구 강남대로 27 aT센터 1302호</p>
+					<p class="f-copyright">Copyright © <span>에이콘컴퍼니</span> All rights.</p>
+				</div>
+			</div>
+			<!-- footer(E) -->
+
+			<!-- 팝업(S) -->
+			<div class="popup-02  pop-ci" style="display:block">
+				<div class="popup-wrap">
+					<a href="#!" class="btn-popup-close-02"></a>
+					<div class="popup-page">
+						
+						<div class="title-box">
+							<div class="fl">
+								<h2 class="title-01">나의 수강후기</h2>
+							</div>
+						</div>
+
+						<div class="pp-wrap scroll-type mt25">
+							<ul class="table-ul-02 devide-2 bg-dark pop-ci-01">
+								<li>
+									<div class="tit-info w100p">
+										<div class="class-info ci-01">
+												<div class="ci-img">
+													<img src="../img/pcb-img-01.png" alt="수강이미지">
+												</div>
+												<div class="ci-name">
+													<h4 class="cin-title-01">2021 농업교육 초급</h4>
+													<div class="cin-detail">
+														<span class="ci-txt">홍길동</span>
+														<span class="ci-txt">총 10강</span>
+														<span class="ci-txt finish">완료(100%)</span>
+													</div>
+												</div>
+										</div>
+									</div>
+									
+								</li>
+
+								<li>
+									<h4 class="title-02 point">평점</h4>
+									<div class="tit-info">
+										<div class="ci-02-score-pop">
+											<span class="ci-score">4.0</span>
+											<span class="ci-star on"></span>
+											<span class="ci-star on"></span>
+											<span class="ci-star on"></span>
+											<span class="ci-star on"></span>
+											<span class="ci-star"></span>
+										</div>
+									</div>
+									
+								</li>
+							</ul>
+
+
+							<ul class="table-ul-02 bg-dark mt7">
+								
+								<li class="h_auto">
+									<h4 class="title-02 point">영상 업로드</h4>
+									<div class="tit-info">
+										<div class="div-devide d1_9">
+											<div class="dd-left">
+												<div class="dd-l-tit">
+													<input type="radio" name="choice01" id="choice11" class="choice02"><label for="choice11" class="radio-agree"><span></span>업로드</label>
+												</div>
+											</div>
+											<div class="dd-right">
+												<div class="div-ip">
+													<div class="file-plus">
+														<label for="ipFile" class="file-button">파일 첨부</label>
+														<input type="file" name="file" id="ipFile" class="ip-file" multiple="">
+														<p class="file-name">파일명.png<a href="#!" class="btn-file-delete"></a></p>
+													</div>
+												</div>
+												<p class="txt-notice mt5">* 영상파일 직접 등록시에는 최대 000MB까지 업로드가 가능합니다.</p>
+												<p class="txt-notice">* 최대 500MB 이하의 mpg, mp4, mv4파일 첨부가 가능합니다.</p>
+											</div>
+										</div>
+										<div class="div-devide d1_9 mt10">
+											<div class="dd-left">
+												<div class="dd-l-tit">
+													<input type="radio" name="choice01" id="choice22" class="choice02"><label for="choice22" class="radio-agree"><span></span>URL링크</label>
+												</div>
+											</div>
+											<div class="dd-right">
+												<div class="div-ip">
+													<input type="text" id="tu02Ip"><label for="tu02Ip"></label>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</li>
+
+								<li class="h_auto">
+									<h4 class="title-02 point">영상 미리보기</h4>
+									<div class="tit-info">
+										<div class="ci-img-box">
+											<img src="../img/ci-class-img.png" alt="수강캡쳐이미지">
+										</div>
+									</div>
+								</li>
+
+
+								<li class="h_auto">
+									<div class="tit-info w100p">
+										<textarea id="tAreaPop" class="pop-ci-ta"></textarea><label for="tAreaPop"></label>
+									</div>
+								</li>
+							</ul>
+						</div>
+						
+
+						<div class="btn-box mt30">
+							<div class="fr">
+								<a href="#!" class="btn-type-01">취소</a>
+								<a href="#!" class="btn-type-01">등록</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 팝업(E) -->
+
+
+
+		</div>
+	</div>
+	<!-- wrap(E) -->
+
+	<!-- mobile-menu(S) -->
+<div id="lnb" class="mobile-menu">
+    <!-- <div class="dim"></div> -->
+
+    <div class="mm_top">
+		<!-- before-log(S) -->
+        <!-- <div class="m_log after-log">
+            <a href="#!">로그인</a>
+            <a href="#!">회원가입</a>
+        </div> -->
+		<!-- before-log(E) -->
+
+		<!-- after-log(S) -->
+		<div class="m_log after-log">
+            <a href="#!"><span class="al-name">교육대상자</span>님 환영합니다!</a>
+        </div>
+		<!-- after-log(E) -->
+		
+        <a href="#!" id="btnCloseMobileMenu" class="m-btn-close"><img src="../img/m_lnb_close.png" alt="모바일lnb닫기버튼"></a>
+    </div>
+    
+    <ul class="lnb_box">
+      <li><a href="#!">교육관리</a>
+        <ul style="display: none;">
+          <li class="noDepth"><a href="#!">교육 조회 및 수강신청</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="#!">컨텐츠관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">게시판</a>
+        <ul>
+          <li class="noDepth"><a href="#!">공지사항</a></li>
+          <li class="noDepth"><a href="#!">농업교육 익명 게시판</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">통계현황</a>
+      <ul>
+          <li class="noDepth"><a href="#!">사용자 등록 현황</a></li>
+          <li class="noDepth"><a href="#!">교육자 실시간 현황</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 제공자 현황</a></li>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+		</ul>
+      </li>
+      <li><a href="#!">시스템관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">기간 관리</a></li>
+          <li class="noDepth"><a href="#!">사용자 관리</a></li>
+          <li class="noDepth"><a href="#!">프로그램 관리</a></li>
+          <li class="noDepth"><a href="#!">메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">기관메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">개인메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통코드 관리</a></li>
+          <li class="noDepth"><a href="#!">게시판구성 관리</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">마이페이지</a>
+        <ul>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+          <li><a href="#!">교육관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">교육이력</a></li>
+				<li class="noDepth"><a href="#!">수강후기</a></li>
+				<li class="noDepth"><a href="#!">좋아요 한 교육</a></li>
+			</ul>
+		  </li>
+          <li><a href="#!">결제관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">강의바구니</a></li>
+				<li class="noDepth"><a href="#!">구매이력</a></li>
+				<li class="noDepth"><a href="#!">나의 포인트</a></li>
+			</ul>
+		  </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<!-- mobile-menu(E) -->		
+
+
+</body>
+</html>
+
+

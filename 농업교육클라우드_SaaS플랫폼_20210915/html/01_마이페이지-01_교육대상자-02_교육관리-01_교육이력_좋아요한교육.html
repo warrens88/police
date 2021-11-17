@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTf-8">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>01_마이페이지-01_교육대상자-02_교육관리-01_교육이력_좋아요한교육</title>
+
+<!-- CSS(S) -->
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/font.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../css/mobile.css">
+<!--CSS(E) -->
+
+<!-- SCRIPT(S) -->
+
+<script type="text/javascript" src="../js/script.js"></script>
+
+
+<!-- SCRIPT(E) -->
+
+</head>
+
+<body> 
+	<!-- warp(S) -->
+	<div class="wrap">
+		<div class="w_in">
+			
+<!-- header(S) -->
+			<div class="header">
+
+				<a href="#!" class="h-logo">
+					<img src="../img/header/header_logo.png" alt="logo" />
+				</a>
+
+				<ul class="nav" >
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">교육관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">교육 조회 및 수강신청</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">컨텐츠관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+							<li><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">게시판</a></div>
+						<ul class="subnav">
+							<li><a href="#!">공지사항</a></li>
+							<li><a href="#!">농업교육 익명 게시판</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">통계현황</a></div>
+						<ul class="subnav">
+							<li><a href="#!">사용자 등록 현황</a></li>
+							<li><a href="#!">교육자 실시간 현황</a></li>
+							<li><a href="#!">컨텐츠 제공자 현황</a></li>
+							<li><a href="#!">대시보드</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_set">
+						<div class="topnav"><a href="#!">시스템관리</a></div>
+						<ul class="subnav">
+							<li><a href="#!">기관 관리</a></li>
+							<li><a href="#!">사용자 관리</a></li>
+							<li><a href="#!">프로그램 관리</a></li>
+							<li><a href="#!">메뉴 관리</a></li>
+							<li><a href="#!">공통메뉴 관리</a></li>
+							<li><a href="#!">기관메뉴 관리</a></li>
+							<li><a href="#!">개인메뉴 관리</a></li>
+							<li><a href="#!">공통코드 관리</a></li>
+							<li><a href="#!">게시판구성 관리</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+
+<!-- 로그인 후(S) -->				
+				<p class="welcome-user"><span class="user-name">시스템관리자</span>님 환영합니다!</p>
+
+				<div class="iconbox">
+					<a href="#!" class="icon bell"><img src="../img/header/bell.png" alt="알림"/><span class="letters">2</span></a>
+					<a href="#!" class="icon set"><img src="../img/header/set.png" alt="설정"/></a>
+					<a href="#!" class="icon logout"><img src="../img/header/logout.png" alt="로그아웃"/></a>
+				</div>
+
+				<a href="#!" class="btn_mobile-menu btn_lnb"><img src="../img/menu_icon.png" alt="모바일메뉴버튼"></a>
+<!-- 로그인 후(E) -->								
+
+<!-- 로그인 전(S) -->
+				<div class="log-before" style="display:none;">
+					<a href="#!" class="h-log">로그인</a>
+					<a href="#!" class="h-sign">회원가입</a>
+				</div>
+<!-- 로그인 전(E) -->
+
+<!-- btn-mobile-menu(S) -->
+				<a href="#!" id="btnMobileMenu" class="btn-mobile-menu"><span>MENU</span></a>
+<!-- btn-mobile-menu(E) -->
+
+<!-- btn-mobile-search(S) -->
+				<a href="#!" class="btn-mobile-search" id="btnOpenRight"><span>+</span></a>
+<!-- btn-mobile-search(E) -->
+
+			</div>	
+			<!-- header(E) -->
+			
+
+			<!-- sub-contents(S) -->
+			<div class="sub-contents">
+				<div class="sub-in">
+
+					<!-- left-menu(S) -->
+					<div class="left-menu" id="leftMenu">
+						<ul class="lb-products-01 blue">
+							<li class="lb-item-depth-01"><a href="#!">대시보드</a></li>
+						</ul>
+						<ul class="lb-products-01 green on">
+							<li class="lb-item-depth-01"><a href="#!">교육관리</a>
+								<ul class="lb-products-02">
+									<li class="lb-item-depth-02 on"><a href="#!">교육이력</a></li>
+									<li class="lb-item-depth-02"><a href="#!">수강후기</a></li>
+									<li class="lb-item-depth-02"><a href="#!">좋아요 한 교육</a></li>
+								</ul>
+							</li>	
+						</ul>
+						<ul class="lb-products-01 yellow">
+							<li class="lb-item-depth-01"><a href="#!">결제관리</a>
+								<ul class="lb-products-02">
+									<li class="lb-item-depth-02"><a href="#!">강의바구니</a></li>
+									<li class="lb-item-depth-02"><a href="#!">구매이력</a></li>
+									<li class="lb-item-depth-02"><a href="#!">나의 포인트</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- left-menu(E) -->
+
+
+					<!-- sub-left(S) -->
+					<div class="sub-left menu" id="leftSide">
+							
+
+						<div class="contents-area mt100">
+						
+							<!-- 순서(S) -->
+							<div class="title-box sort">
+								<div class="fl">
+									<a href="#!" class="btn-sort on">최근 수강 순</a>
+									<a href="#!" class="btn-sort">제목순</a>
+									<a href="#!" class="btn-sort">진행률순</a>
+								</div>
+							</div>
+							<!-- 순서(E) -->
+
+							<!-- 좋아요 한 교육(S) -->
+							<div class="best-media-wrap my-page">
+								<div class="bm-list">
+									<div class="bm-item">
+										<div class="best-media">
+											<div class="bm-in">
+												<a href="#!" class="ico-play"></a>
+											</div>
+											<div class="bm-image">
+												<img src="../img/bm-img-01.png" alt="동영상썸네일">
+											</div>
+										</div>
+										<div class="bm-title-box bottom">
+											<div class="bm-title-wrap">
+												<h4 class="bm-title">2021 농업교육 초급</h4>
+											</div>
+											<div class="bm-simple-info">
+												<div class="fl">
+													<span class="bsi name">홍길동</span>
+													<span class="bsi total">총 10강</span>
+													<span class="bsi score">5.0</span>
+													<span class="bsi ing">진행중</span>
+												</div>
+											</div>
+											<div class="progress-graph"><span class="pg-value" style="width:60%"></span></div>
+										</div>
+									</div>
+
+									<div class="bm-item">
+										<div class="best-media">
+											<div class="bm-in">
+												<a href="#!" class="ico-play"></a>
+											</div>
+											<div class="bm-image">
+												<img src="../img/cm-test-01.png" alt="동영상썸네일">
+											</div>
+										</div>
+										<div class="bm-title-box bottom">
+											<div class="bm-title-wrap">
+												<h4 class="bm-title">2021 농업교육 초급</h4>
+											</div>
+											<div class="bm-simple-info">
+												<div class="fl">
+													<span class="bsi name">홍길동</span>
+													<span class="bsi total">총 10강</span>
+													<span class="bsi score">5.0</span>
+													<span class="bsi ing">진행중</span>
+												</div>
+											</div>
+											<div class="progress-graph"><span class="pg-value" style="width:60%"></span></div>
+										</div>
+									</div>
+
+									<div class="bm-item">
+										<div class="best-media">
+											<div class="bm-in">
+												<a href="#!" class="ico-play"></a>
+											</div>
+											<div class="bm-image">
+												<img src="../img/cm-test-03.png" alt="동영상썸네일">
+											</div>
+										</div>
+										<div class="bm-title-box bottom">
+											<div class="bm-title-wrap">
+												<h4 class="bm-title">2021 농업교육 초급</h4>
+											</div>
+											<div class="bm-simple-info">
+												<div class="fl">
+													<span class="bsi name">홍길동</span>
+													<span class="bsi total">총 10강</span>
+													<span class="bsi score">5.0</span>
+													<span class="bsi ing">진행중</span>
+												</div>
+											</div>
+											<div class="progress-graph"><span class="pg-value" style="width:60%"></span></div>
+										</div>
+									</div>
+
+									<div class="bm-item">
+										<div class="best-media">
+											<div class="bm-in">
+												<a href="#!" class="ico-play"></a>
+											</div>
+											<div class="bm-image">
+												<img src="../img/bm-img-01.png" alt="동영상썸네일">
+											</div>
+										</div>
+										<div class="bm-title-box bottom">
+											<div class="bm-title-wrap">
+												<h4 class="bm-title">2021 농업교육 초급</h4>
+											</div>
+											<div class="bm-simple-info">
+												<div class="fl">
+													<span class="bsi name">홍길동</span>
+													<span class="bsi total">총 10강</span>
+													<span class="bsi score">5.0</span>
+													<span class="bsi ing">진행중</span>
+												</div>
+											</div>
+											<div class="progress-graph"><span class="pg-value" style="width:60%"></span></div>
+										</div>
+									</div>
+
+									<div class="bm-item">
+										<div class="best-media">
+											<div class="bm-in">
+												<a href="#!" class="ico-play"></a>
+											</div>
+											<div class="bm-image">
+												<img src="../img/bm-img-02.png" alt="동영상썸네일">
+											</div>
+										</div>
+										<div class="bm-title-box bottom">
+											<div class="bm-title-wrap">
+												<h4 class="bm-title">2021 농업교육 초급</h4>
+											</div>
+											<div class="bm-simple-info">
+												<div class="fl">
+													<span class="bsi name">홍길동</span>
+													<span class="bsi total">총 10강</span>
+													<span class="bsi score">5.0</span>
+													<span class="bsi ing">진행중</span>
+												</div>
+											</div>
+											<div class="progress-graph"><span class="pg-value" style="width:60%"></span></div>
+										</div>
+									</div>
+
+									<div class="bm-item">
+										<div class="best-media">
+											<div class="bm-in">
+												<a href="#!" class="ico-play"></a>
+											</div>
+											<div class="bm-image">
+												<img src="../img/bm-img-03.png" alt="동영상썸네일">
+											</div>
+										</div>
+										<div class="bm-title-box bottom">
+											<div class="bm-title-wrap">
+												<h4 class="bm-title">2021 농업교육 초급</h4>
+											</div>
+											<div class="bm-simple-info">
+												<div class="fl">
+													<span class="bsi name">홍길동</span>
+													<span class="bsi total">총 10강</span>
+													<span class="bsi score">5.0</span>
+													<span class="bsi ing">진행중</span>
+												</div>
+											</div>
+											<div class="progress-graph"><span class="pg-value" style="width:60%"></span></div>
+										</div>
+									</div>
+									
+
+									
+								</div>
+							</div>
+							<!-- 좋아요 한 교육(E) -->
+
+
+							<!-- 동영상 리스트(S) -->
+
+							<!-- 순서(S) -->
+							<div class="title-box sort">
+								<div class="fl">
+									<a href="#!" class="btn-sort on">최신순</a>
+									<a href="#!" class="btn-sort">제목순</a>
+									<a href="#!" class="btn-sort">별점순</a>
+									<a href="#!" class="btn-sort">수강생 많은순</a>
+								</div>
+							</div>
+							<!-- 순서(E) -->
+
+
+							<div class="common-media-wrap">
+								<div class="cm-list">
+									<div class="cm-item">
+										<div class="common-media">
+											<div class="cm-buy-click">
+												<a href="#!" class="cm-ico basket"></a>
+												<a href="#!" class="cm-ico like"></a>
+											</div>
+											<div class="cm-image">
+												<a href="#!">
+													<img src="../img/cm-img-01.png" alt="동영상썸네일">
+												</a>
+											</div>
+										</div>
+										<div class="cm-title-box bottom">
+											<a href="#!">
+												<div class="title-box">
+													<h4 class="cm-title">2021 안정된 매출을 위한 작목 
+														선정 및 판매 전략</h4>
+												</div>
+												<div class="cm-simple-info">
+													<span class="csi name">홍길동</span>
+													<span class="csi total">총 10강</span>
+													<span class="csi score">5.0</span>
+													<p class="cbi-txt">KRW 200,000</p>
+												</div>
+											</a>
+										</div>
+									</div>
+							
+									
+									<div class="cm-item">
+										<div class="common-media">
+											<div class="cm-buy-click">
+												<a href="#!" class="cm-ico basket"></a>
+												<a href="#!" class="cm-ico like"></a>
+											</div>
+											<div class="cm-image">
+												<a href="#!">
+													<img src="../img/cm-img-02.png" alt="동영상썸네일">
+												</a>
+											</div>
+										</div>
+										<div class="cm-title-box bottom">
+											<a href="#!">
+												<div class="title-box">
+													<h4 class="cm-title">2021 안정된 매출을 위한 작목 
+														선정 및 판매 전략</h4>
+												</div>
+												<div class="cm-simple-info">
+													<span class="csi name">홍길동</span>
+													<span class="csi total">총 10강</span>
+													<span class="csi score">5.0</span>
+													<p class="cbi-txt">KRW 200,000</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="cm-item">
+										<div class="common-media">
+											<div class="cm-buy-click">
+												<a href="#!" class="cm-ico basket"></a>
+												<a href="#!" class="cm-ico like"></a>
+											</div>
+											<div class="cm-image">
+												<a href="#!">
+													<img src="../img/cm-img-03.png" alt="동영상썸네일">
+												</a>
+											</div>
+										</div>
+										<div class="cm-title-box bottom">
+											<a href="#!">
+												<div class="title-box">
+													<h4 class="cm-title">농업과 법 - 핵심정리</h4>
+												</div>
+												<div class="cm-simple-info">
+													<span class="csi name">홍길동</span>
+													<span class="csi total">총 10강</span>
+													<span class="csi score">5.0</span>
+													<p class="cbi-txt">KRW 200,000</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="cm-item">
+										<div class="common-media">
+											<div class="cm-buy-click">
+												<a href="#!" class="cm-ico basket"></a>
+												<a href="#!" class="cm-ico like"></a>
+											</div>
+											<div class="cm-image">
+												<a href="#!">
+													<img src="../img/cm-img-04.png" alt="동영상썸네일">
+												</a>
+											</div>
+										</div>
+										<div class="cm-title-box bottom">
+											<a href="#!">
+												<div class="title-box">
+													<h4 class="cm-title">농업과 법 - 핵심정리</h4>
+												</div>
+												<div class="cm-simple-info">
+													<span class="csi name">홍길동</span>
+													<span class="csi total">총 10강</span>
+													<span class="csi score">5.0</span>
+													<p class="cbi-txt">KRW 200,000</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="cm-item">
+										<div class="common-media">
+											<div class="cm-buy-click">
+												<a href="#!" class="cm-ico basket"></a>
+												<a href="#!" class="cm-ico like"></a>
+											</div>
+											<div class="cm-image">
+												<a href="#!">
+													<img src="../img/cm-img-01.png" alt="동영상썸네일">
+												</a>
+											</div>
+										</div>
+										<div class="cm-title-box bottom">
+											<a href="#!">
+												<div class="title-box">
+													<h4 class="cm-title">농업과 법 - 핵심정리</h4>
+												</div>
+												<div class="cm-simple-info">
+													<span class="csi name">홍길동</span>
+													<span class="csi total">총 10강</span>
+													<span class="csi score">5.0</span>
+													<p class="cbi-txt">KRW 200,000</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="cm-item">
+										<div class="common-media">
+											<div class="cm-buy-click">
+												<a href="#!" class="cm-ico basket"></a>
+												<a href="#!" class="cm-ico like"></a>
+											</div>
+											<div class="cm-image">
+												<a href="#!">
+													<img src="../img/cm-img-02.png" alt="동영상썸네일">
+												</a>
+											</div>
+										</div>
+										<div class="cm-title-box bottom">
+											<a href="#!">
+												<div class="title-box">
+													<h4 class="cm-title">농업과 법 - 핵심정리</h4>
+												</div>
+												<div class="cm-simple-info">
+													<span class="csi name">홍길동</span>
+													<span class="csi total">총 10강</span>
+													<span class="csi score">5.0</span>
+													<p class="cbi-txt">KRW 200,000</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="cm-item">
+										<div class="common-media">
+											<div class="cm-buy-click">
+												<a href="#!" class="cm-ico basket"></a>
+												<a href="#!" class="cm-ico like"></a>
+											</div>
+											<div class="cm-image">
+												<a href="#!">
+													<img src="../img/cm-img-01.png" alt="동영상썸네일">
+												</a>
+											</div>
+										</div>
+										<div class="cm-title-box bottom">
+											<a href="#!">
+												<div class="title-box">
+													<h4 class="cm-title">농업과 법 - 핵심정리</h4>
+												</div>
+												<div class="cm-simple-info">
+													<span class="csi name">홍길동</span>
+													<span class="csi total">총 10강</span>
+													<span class="csi score">5.0</span>
+													<p class="cbi-txt">KRW 200,000</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="cm-item">
+										<div class="common-media">
+											<div class="cm-buy-click">
+												<a href="#!" class="cm-ico basket"></a>
+												<a href="#!" class="cm-ico like"></a>
+											</div>
+											<div class="cm-image">
+												<a href="#!">
+													<img src="../img/cm-img-02.png" alt="동영상썸네일">
+												</a>
+											</div>
+										</div>
+										<div class="cm-title-box bottom">
+											<a href="#!">
+												<div class="title-box">
+													<h4 class="cm-title">농업과 법 - 핵심정리</h4>
+												</div>
+												<div class="cm-simple-info">
+													<span class="csi name">홍길동</span>
+													<span class="csi total">총 10강</span>
+													<span class="csi score">5.0</span>
+													<p class="cbi-txt">KRW 200,000</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="cm-item">
+										<div class="common-media">
+											<div class="cm-buy-click">
+												<a href="#!" class="cm-ico basket"></a>
+												<a href="#!" class="cm-ico like"></a>
+											</div>
+											<div class="cm-image">
+												<a href="#!">
+													<img src="../img/cm-img-01.png" alt="동영상썸네일">
+												</a>
+											</div>
+										</div>
+										<div class="cm-title-box bottom">
+											<a href="#!">
+												<div class="title-box">
+													<h4 class="cm-title">농업과 법 - 핵심정리</h4>
+												</div>
+												<div class="cm-simple-info">
+													<span class="csi name">홍길동</span>
+													<span class="csi total">총 10강</span>
+													<span class="csi score">5.0</span>
+													<p class="cbi-txt">KRW 200,000</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="cm-item">
+										<div class="common-media">
+											<div class="cm-buy-click">
+												<a href="#!" class="cm-ico basket"></a>
+												<a href="#!" class="cm-ico like"></a>
+											</div>
+											<div class="cm-image">
+												<a href="#!">
+													<img src="../img/cm-img-02.png" alt="동영상썸네일">
+												</a>
+											</div>
+										</div>
+										<div class="cm-title-box bottom">
+											<a href="#!">
+												<div class="title-box">
+													<h4 class="cm-title">농업과 법 - 핵심정리</h4>
+												</div>
+												<div class="cm-simple-info">
+													<span class="csi name">홍길동</span>
+													<span class="csi total">총 10강</span>
+													<span class="csi score">5.0</span>
+													<p class="cbi-txt">KRW 200,000</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="cm-item">
+										<div class="common-media">
+											<div class="cm-buy-click">
+												<a href="#!" class="cm-ico basket"></a>
+												<a href="#!" class="cm-ico like"></a>
+											</div>
+											<div class="cm-image">
+												<a href="#!">
+													<img src="../img/cm-img-01.png" alt="동영상썸네일">
+												</a>
+											</div>
+										</div>
+										<div class="cm-title-box bottom">
+											<a href="#!">
+												<div class="title-box">
+													<h4 class="cm-title">농업과 법 - 핵심정리</h4>
+												</div>
+												<div class="cm-simple-info">
+													<span class="csi name">홍길동</span>
+													<span class="csi total">총 10강</span>
+													<span class="csi score">5.0</span>
+													<p class="cbi-txt">KRW 200,000</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="cm-item">
+										<div class="common-media">
+											<div class="cm-buy-click">
+												<a href="#!" class="cm-ico basket"></a>
+												<a href="#!" class="cm-ico like"></a>
+											</div>
+											<div class="cm-image">
+												<a href="#!">
+													<img src="../img/cm-img-02.png" alt="동영상썸네일">
+												</a>
+											</div>
+										</div>
+										<div class="cm-title-box bottom">
+											<a href="#!">
+												<div class="title-box">
+													<h4 class="cm-title">농업과 법 - 핵심정리</h4>
+												</div>
+												<div class="cm-simple-info">
+													<span class="csi name">홍길동</span>
+													<span class="csi total">총 10강</span>
+													<span class="csi score">5.0</span>
+													<p class="cbi-txt">KRW 200,000</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+								</div>	
+							</div>
+							<!-- 동영상 리스트(E) -->
+													
+						</div>
+
+						
+
+					</div>
+					<!-- sub-left(E) -->
+
+					<!-- sub-right(S) -->
+					<div class="sub-right" id="rightSide">
+
+
+					</div>
+					<!-- sub-right(E) -->
+
+				</div>
+			</div>
+			<!-- sub-contents(E) -->
+
+			
+						<!-- footer(S) -->
+			<div class="footer">
+				<div class="f_in">
+					
+					<a href="#!" class="f-logo">
+						<img src="../img/footer/footer_logo.png" alt="footerlogo" />
+					</a>
+
+					<div class="f-nav">
+						<a href="#!">개인정보처리방침</a>
+						<a href="#!">이용약관</a>
+					</div>
+
+					<p class="f-address">서울시 서초구 강남대로 27 aT센터 1302호</p>
+					<p class="f-copyright">Copyright © <span>에이콘컴퍼니</span> All rights.</p>
+				</div>
+			</div>
+			<!-- footer(E) -->
+
+		</div>
+	</div>
+	<!-- wrap(E) -->
+
+	<!-- mobile-menu(S) -->
+<div id="lnb" class="mobile-menu">
+    <!-- <div class="dim"></div> -->
+
+    <div class="mm_top">
+		<!-- before-log(S) -->
+        <!-- <div class="m_log after-log">
+            <a href="#!">로그인</a>
+            <a href="#!">회원가입</a>
+        </div> -->
+		<!-- before-log(E) -->
+
+		<!-- after-log(S) -->
+		<div class="m_log after-log">
+            <a href="#!"><span class="al-name">교육대상자</span>님 환영합니다!</a>
+        </div>
+		<!-- after-log(E) -->
+		
+        <a href="#!" id="btnCloseMobileMenu" class="m-btn-close"><img src="../img/m_lnb_close.png" alt="모바일lnb닫기버튼"></a>
+    </div>
+    
+    <ul class="lnb_box">
+      <li><a href="#!">교육관리</a>
+        <ul style="display: none;">
+          <li class="noDepth"><a href="#!">교육 조회 및 수강신청</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="#!">컨텐츠관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(컨텐츠 제공자)</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 등록 관리(시스템 관리자)</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">게시판</a>
+        <ul>
+          <li class="noDepth"><a href="#!">공지사항</a></li>
+          <li class="noDepth"><a href="#!">농업교육 익명 게시판</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">통계현황</a>
+      <ul>
+          <li class="noDepth"><a href="#!">사용자 등록 현황</a></li>
+          <li class="noDepth"><a href="#!">교육자 실시간 현황</a></li>
+          <li class="noDepth"><a href="#!">컨텐츠 제공자 현황</a></li>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+		</ul>
+      </li>
+      <li><a href="#!">시스템관리</a>
+        <ul>
+          <li class="noDepth"><a href="#!">기간 관리</a></li>
+          <li class="noDepth"><a href="#!">사용자 관리</a></li>
+          <li class="noDepth"><a href="#!">프로그램 관리</a></li>
+          <li class="noDepth"><a href="#!">메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">기관메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">개인메뉴 관리</a></li>
+          <li class="noDepth"><a href="#!">공통코드 관리</a></li>
+          <li class="noDepth"><a href="#!">게시판구성 관리</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">마이페이지</a>
+        <ul>
+          <li class="noDepth"><a href="#!">대시보드</a></li>
+          <li><a href="#!">교육관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">교육이력</a></li>
+				<li class="noDepth"><a href="#!">수강후기</a></li>
+				<li class="noDepth"><a href="#!">좋아요 한 교육</a></li>
+			</ul>
+		  </li>
+          <li><a href="#!">결제관리</a>
+			<ul>
+				<li class="noDepth"><a href="#!">강의바구니</a></li>
+				<li class="noDepth"><a href="#!">구매이력</a></li>
+				<li class="noDepth"><a href="#!">나의 포인트</a></li>
+			</ul>
+		  </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<!-- mobile-menu(E) -->		
+
+
+</body>
+</html>
+
+
